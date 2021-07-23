@@ -444,7 +444,7 @@ nav li:hover > ul > li {
 
 /*APLICADO A LOGOS SOCIAL MEDIA*/
 .transformLogosSocialMedia:hover {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
 }
 
 /*FIN TRANSFORMACIONES DENTRO DE LOS HTML*/
