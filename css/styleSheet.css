@@ -440,6 +440,15 @@ nav li:hover > ul > li {
 
 /*FIN USO DE MEDIA QUERY HTML -INDEX-*/
 
+/*INICIO TRANSFORMACIONES DENTRO DE LOS HTML*/
+
+/*APLICADO A LOGOS SOCIAL MEDIA*/
+.transformLogosSocialMedia:hover {
+    transform: rotate(360deg);
+}
+
+/*FIN TRANSFORMACIONES DENTRO DE LOS HTML*/
+
 /*IMAGENES HTML -MEDIOS DE PAGO-*/
 .cashImages {
     border-radius: 15%;  
@@ -482,7 +491,7 @@ nav li:hover > ul > li {
     display: flex;
     align-content: center;
     margin: 15px;
-    padding: 15px; 
+    padding: 15px;
 }
 
 /*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/
