@@ -203,7 +203,7 @@ nav li:hover > ul > li {
     background-image: url(../images/imagen_secciones/medios_de_pago.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: 25%;
 }
 
 /*SECTION 9 CORRESPONDE HTML 'CONTACTO'*/
@@ -504,7 +504,9 @@ input:focus {
 .cashImages {
     border-radius: 15%;  
     width: 200px;   
-    height: auto;  
+    height: 150px;
+    padding: 50px;
+    margin: 25px;
 }
 
 /*IMAGEN FRENTE LOCAL HTML -HISTORIA A GUSTO TUYO-*/

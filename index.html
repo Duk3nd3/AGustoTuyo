@@ -9,10 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AGustoTuyo | Home</title>
-        <!-- Boostrap -->
-        <link rel="stylesheet" href="/css/bootstrap.css">
         <!-- My Style -->
         <link rel="stylesheet" href="../css/styleSheet.css">
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
     </head>
     <!--Aplicamos color al fondo de la pagina con ID backgroundWeb-->
 <body id="backgroundWeb">    
@@ -137,7 +137,13 @@
             </ol>                      
             <h3 class="classTitleReferences">Referencia</h3>
             <ul class="classStyleReferences">
-                <li class="classOffDayReference transformRefCalendar">Miercoles de OFERTAS</li>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <li class="classOffDayReference transformRefCalendar ">Miercoles de OFERTAS</li>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
                 <li class="classClosedReference transformRefCalendar">Sin atención al público</li>
             </ul>
         </section>
@@ -182,7 +188,17 @@
             </ul>
             <p>2021 AGustoTuyo Conservas Artesanales</p>
         </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Trabaja con nosotros</button></li>
+                <li><button class="dropdown-item" type="button">Derechos Reservados</button></li>
+                <li><button class="dropdown-item" type="button">Ayuda</button></li>
+            </ul>
+        </div>
     </footer>
-    <script src="js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
