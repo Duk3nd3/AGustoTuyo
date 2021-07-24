@@ -460,11 +460,45 @@ nav li:hover > ul > li {
 .transformWhatsappNameColor:hover {
     color: rgb(11, 173, 19);
 }
-/*FIN SOCIAL MEDIA*/
 
+/*APLICADO A IMAGENES PRODUCTOS*/
 
+.transformProductsImg:hover {
+    transform: rotate(45deg);
+}
+
+/*APLICADO REFERENCIA CALENDARIO*/
+
+.transformRefCalendar:hover {
+    transform: scale(2,2);
+}
+
+/*APLICANDO INPUT FOCUS DENTRO DE LA TABLA CONTACTOS*/
+
+input:focus {
+    width: 200px;
+    font-size: 20px;
+}
 
 /*FIN TRANSFORMACIONES*/
+
+/*INICIO ANIMACIONES*/
+
+.animationTitles {
+    animation-duration: 5s;
+    animation-name: animationTitles;
+}
+
+@keyframes animationTitles {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*FIN ANIMACIONES*/
 
 /*IMAGENES HTML -MEDIOS DE PAGO-*/
 .cashImages {
