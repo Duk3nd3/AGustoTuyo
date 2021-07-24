@@ -440,14 +440,31 @@ nav li:hover > ul > li {
 
 /*FIN USO DE MEDIA QUERY HTML -INDEX-*/
 
-/*INICIO TRANSFORMACIONES DENTRO DE LOS HTML*/
+/*INICIO TRANSFORMACIONES*/
 
-/*APLICADO A LOGOS SOCIAL MEDIA*/
+/*APLICADO A SOCIAL MEDIA*/
 .transformLogosSocialMedia:hover {
-    transform: rotate(90deg);
+    border: 2px solid black;
+    transform: translate(3px, 2px);
+    transition: all 0.5s;
 }
 
-/*FIN TRANSFORMACIONES DENTRO DE LOS HTML*/
+.transformInstagramNameColor:hover {
+    color: rgb(201, 34, 34);
+}
+
+.transformFacebookNameColor:hover {
+    color: rgb(226, 226, 226);
+}
+
+.transformWhatsappNameColor:hover {
+    color: rgb(11, 173, 19);
+}
+/*FIN SOCIAL MEDIA*/
+
+
+
+/*FIN TRANSFORMACIONES*/
 
 /*IMAGENES HTML -MEDIOS DE PAGO-*/
 .cashImages {
