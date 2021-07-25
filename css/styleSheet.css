@@ -99,6 +99,16 @@ nav li:hover > ul > li {
     padding: 5px;
 }
 
+/*Pop-up alerta sitio en construccion*/
+
+#alert {
+    position: relative;
+    padding: 4rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
 /*IMAGEN A REEMPLAZAR POR RECETAS ORIGINALES. REFERENCIA: 'Nuestras recetas favoritas' EN INDEX*/
 #favRecipes {
     border-radius: 15px;
@@ -314,7 +324,7 @@ nav li:hover > ul > li {
 .classOffDayReference {
     background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(48,148,172,1) 57%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: auto;
     color: darkgreen;
     margin: 5px;
 }
@@ -328,7 +338,7 @@ nav li:hover > ul > li {
 .classClosedReference {    
     background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(34,46,48,1) 57%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: auto;
     font-style: italic;
     color: darkred;
     margin: 5px;
@@ -470,7 +480,7 @@ nav li:hover > ul > li {
 /*APLICADO REFERENCIA CALENDARIO*/
 
 .transformRefCalendar:hover {
-    transform: scale(2,2);
+    transform: scale(1.2,1.2);
 }
 
 /*APLICANDO INPUT FOCUS DENTRO DE LA TABLA CONTACTOS*/
@@ -498,13 +508,27 @@ input:focus {
     }
 }
 
+.animationPopUp {
+    animation-duration: 2s;
+    animation-name: animationPopUp;
+}
+
+@keyframes animationPopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*FIN ANIMACIONES*/
 
 /*IMAGENES HTML -MEDIOS DE PAGO-*/
 .cashImages {
     border-radius: 15%;  
-    width: 200px;   
-    height: 150px;
+    width: 300px;   
+    height: auto;
     padding: 50px;
     margin: 25px;
 }

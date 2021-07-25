@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,10 +78,24 @@
                 <!--Creacion de cuenta clientes-->                             
                 <li style="float:right"> <a href="">Ingresa a tu cuenta</a></li>
                 <!--Carrito de compras clientes-->
-                <li style="float:right"> <a href="">Mis compras</a></li>
+                <li style="float:right"> <a href=""><div>Mis compras</div></a></li>
+                <div class="alert alert-warning alert-dismissible fade show animationPopUp" role="alert">
+                    <!--  Mensaje Oferta Barra de Navegacion  -->
+                    <div id="alert">
+                        <strong>¡HOLA!</strong> Bienvenid@, por el momento este sitio se encuentra en construcción, te pedimos disculpas por las molestias ocasionadas. Podes cerrar este mensaje dando clic sobre la cruz que se encuentra en la esquina superior derecho. ¡MUCHAS GRACIAS!
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
             </ul>                       
         </nav>         
     </header>
+    <!--  Se muestra al cliente en que pagina está  -->
+    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Estas en la siguiente ruta</li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </div>
     <!--Eslogan de la Empresa-->
     <h1 class="mediaQueryColor-h1 animationTitles">Conservas Artesanales 100% Naturales</h1>
     <!--Imagen logo empresa-->
@@ -137,12 +150,12 @@
             </ol>                      
             <h3 class="classTitleReferences">Referencia</h3>
             <ul class="classStyleReferences">
-                <div class="spinner-grow text-success" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div class="spinner-grow text-success"  role="status">
+                    <span class="visually-hidden">OFF...</span>
                 </div>
                 <li class="classOffDayReference transformRefCalendar ">Miercoles de OFERTAS</li>
                 <div class="spinner-grow text-danger" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                    <span class="visually-hidden">CLOSED...</span>
                 </div>
                 <li class="classClosedReference transformRefCalendar">Sin atención al público</li>
             </ul>
@@ -190,7 +203,7 @@
         </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
+                Más...
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li><button class="dropdown-item" type="button">Trabaja con nosotros</button></li>
