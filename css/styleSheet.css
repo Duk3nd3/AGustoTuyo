@@ -231,6 +231,19 @@ nav li:hover > ul > li {
 
 /*COMIENZO DE LAS CLASES HTML*/
 
+.classCards {
+    justify-content: space-around;
+}
+
+.classCardSpecials > img {
+    width: 100px;
+    height: auto;
+}
+
+.card {
+    background-color: darkgrey !important;
+}
+
 /*TABLA HTML 'NUESTROS PRODUCTOS'*/
 
 .tableClass { 
@@ -445,6 +458,12 @@ nav li:hover > ul > li {
     }
     .mediaQueryNav-1024px {
         width: 97%;
+    }
+}
+
+@media (max-width: 1440px) {
+    #imgSection9 {
+        background-size: 0 0;
     }
 }
 
@@ -707,4 +726,4 @@ ul li {
     list-style: none;
 }
 
-/*FIN DE ETIQUETAS EN LOS HTML*/
+/*FIN ETIQUETAS*/

@@ -133,20 +133,47 @@
             </div>
         </section>
         <section id="imgSection9">
-            <!--Tabla sobre telefonos de contacto e imagenes ilustrativas de cada sector de la empresa-->
+            <!--Cards sobre telefonos de contacto de cada sector de la empresa-->
             <h2 class="animationTitles">Telefonos de contacto disponibles</h2>
-            <table class="tableClass">             
-                <tr class="classSpecialTitles">
-                    <th>Ventas</th>           
-                    <th>Administracion</th>
-                    <th>Reparto</th>
-                </tr>               
-                <tr class="classColum">                
-                    <td>Telefono ventas 123123123</td>
-                    <td>Telefono administracion 123123123</td>
-                    <td>Telefono entregas 123123123</td>                    
-                </tr>  
-            </table>    
+            <div class="container">            
+                <div class="row classCards">
+                    <div class="card border-primary mb-3" style="max-width: 18rem; background-color: rgb(173, 173, 173);">
+                        <div class="card-header">Administracion</div>
+                        <div class="card-body text-primary">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Para contactar al area administrativa de la empresa, por favor digite 123123123.</p>
+                        </div>
+                    </div>
+                    <div class="card border-success mb-3" style="max-width: 18rem; background-color: rgb(173, 173, 173);">
+                        <div class="card-header">Ventas</div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Para contactar al area de ventas por favor digite 123123123.</p>
+                        </div>
+                    </div>
+                    <div class="card border-info mb-3" style="max-width: 18rem; background-color: rgb(173, 173, 173);">
+                        <div class="card-header">Reparto</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Para contactar al area de repartos y coordinar horarios de entrega, por favor digite 123123123.</p>
+                        </div>
+                    </div>
+                    <div class="card border-warning mb-3" style="max-width: 18rem; background-color: rgb(173, 173, 173);">
+                        <div class="card-header">Gerencia Comercial</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Para contactar al area gerencial comercial, por favor digite 123123123.</p>
+                        </div>
+                    </div>
+                    <div class="card border-danger mb-3" style="max-width: 18rem; background-color: rgb(173, 173, 173);">
+                        <div class="card-header">Reclamos</div>
+                        <div class="card-body text-danger">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">Para contactar al area de reclamos, por favor digite 123123123.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <h2 class="animationTitles">Contactanos por correo</h2>            
@@ -201,14 +228,15 @@
             </div>
         </section>
     </main>
-<!--Pie de pagina desde donde el cliente tambien podra volver o acceder al index/home-->
-<footer id="footer">
-    <div>
-        <ul class="ulFooter">                
-            <li class="navBar"><a href="../index.html">Home</a></li>                
-        </ul>
-        <p>2021 AGustoTuyo Conservas Artesanales</p>
-    </div>
-</footer>
+    <!--Pie de pagina desde donde el cliente tambien podra volver o acceder al index/home-->
+    <footer id="footer">
+        <div>
+            <ul class="ulFooter">                
+                <li class="navBar"><a href="../index.html">Home</a></li>                
+            </ul>
+            <p>2021 AGustoTuyo Conservas Artesanales</p>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
