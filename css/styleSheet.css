@@ -1,14 +1,11 @@
 /*Seleccion universal con asterisco*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /*INICIO MENU DE NAVEGACION -ESTILOS GENERALES- */
-
 nav ul {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +33,6 @@ nav a:hover {
 }
 
 /*PRIMER NIVEL MENU DESPLEGABLE*/
-
 .navMenu {
     background: #333;
     display: table;
@@ -48,7 +44,6 @@ nav a:hover {
 }
 
 /*SEGUNDO NIVEL MENU DESPLEGABLE*/
-
 nav li li {
     background: rgba(53, 51, 51, 0.801);
     max-height: 0;
@@ -67,12 +62,10 @@ nav li:hover > ul > li {
 }
 
 /*TERCER NIVEL MENU DESPLEGABLE*/
-
 .navMenu ul ul {
     left: 100%;
     top: 0;
 } 
-
 /*FIN MENU DE NAVEGACION*/
 
 /*COMIENZA SECCION IDs*/
@@ -99,8 +92,7 @@ nav li:hover > ul > li {
     padding: 5px;
 }
 
-/*Pop-up alerta sitio en construccion*/
-
+/*POP-UP ALERTA SITIO EN CONSTRUCCION*/
 #alert {
     position: relative;
     padding: 4rem 1rem;
@@ -145,9 +137,7 @@ nav li:hover > ul > li {
 }
 
 /*SECCIONES -SECTIONS- DE LOS HTML*/
-
 /*SECTION 1 AL 3 CORRESPONDEN HTML INDEX*/
-
 #imgSection1 {
     background-image: url(../images/imagen_secciones/business-text-calendar.png);    
     background-position: center;
@@ -165,14 +155,13 @@ nav li:hover > ul > li {
 }
 
 /*SECTION 3 HTML 'NUESTROS PRODUCTOS' COMPARTIDA CON INDEX -SECTION 4 CORRESPONDE HTML 'NUESTROS PRODUCTOS'*/
-
-/* #imgSection3 {
+#imgSection3 {
     background-image: url(../images/imagen_secciones/imagen_condimentos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 25%;
-} */
+}
 
 #imgSection4 {
     background-image: url(../images/imagen_secciones/imagen_chef.png);
@@ -181,7 +170,6 @@ nav li:hover > ul > li {
 }
 
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
-
 #imgSection5 {
     background-image: url(../images/imagen_secciones/imagen_nuestra_historia.png);
     background-position: center;
@@ -208,7 +196,6 @@ nav li:hover > ul > li {
 }
 
 /*SECTION 8 CORRESPONDE HTML 'MEDIOS DE PAGO'*/
-
 #imgSection8 {
     background-image: url(../images/imagen_secciones/medios_de_pago.png);
     background-position: right;
@@ -217,20 +204,17 @@ nav li:hover > ul > li {
 }
 
 /*SECTION 9 CORRESPONDE HTML 'CONTACTO'*/
-
 #imgSection9 {
     background-image: url(../images/imagen_secciones/imagen_contactos.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 15%;
 }
-
 /*FIN SECCIONES (SECTIONS) HTML*/
 
 /*FIN SECCION IDs*/
 
 /*COMIENZO DE LAS CLASES HTML*/
-
 .classCards {
     justify-content: space-around;
 }
@@ -250,7 +234,6 @@ nav li:hover > ul > li {
 }
 
 /*HTML 'NUESTROS PRODUCTOS'*/
-
 .classImagesChimichurris {
     display: flex;
     justify-content: space-between;
@@ -275,7 +258,6 @@ nav li:hover > ul > li {
     justify-content: space-evenly;
     margin: 25px;
 }
-
 /*FIN HTML 'NUESTROS PRODUCTOS*/
 
 /*PRODUCTOS DESTACADOS HTML -INDEX-*/
@@ -287,7 +269,6 @@ nav li:hover > ul > li {
 }
 
 /*INICIO CALENDARIO CON GRID HTML -INDEX-*/
-
 .classCalendar {    
     list-style: none;
     display: grid;
@@ -358,11 +339,9 @@ nav li:hover > ul > li {
     color: olive;
     margin-top: 15px;
 }
-
 /*FIN CALENDARIO CON GRID HTML -INDEX-*/
 
 /*INICIO USO DE MEDIA QUERY HTML -INDEX-*/
-
 /*Media Query en screen de hasta 425px*/
 @media (max-width: 425px) {
     #footer {
@@ -444,11 +423,9 @@ nav li:hover > ul > li {
         background-size: 0 0;
     }
 }
-
 /*FIN USO DE MEDIA QUERY HTML -INDEX-*/
 
 /*INICIO TRANSFORMACIONES*/
-
 /*APLICADO A SOCIAL MEDIA*/
 .transformLogosSocialMedia:hover {
     border: 2px solid black;
@@ -469,28 +446,23 @@ nav li:hover > ul > li {
 }
 
 /*APLICADO A IMAGENES PRODUCTOS*/
-
 .transformProductsImg:hover {
     transform: rotate(45deg);
 }
 
 /*APLICADO REFERENCIA CALENDARIO*/
-
 .transformRefCalendar:hover {
     transform: scale(1.2,1.2);
 }
 
 /*APLICANDO INPUT FOCUS DENTRO DE LA TABLA CONTACTOS*/
-
 input:focus {
     width: 200px;
     font-size: 20px;
 }
-
 /*FIN TRANSFORMACIONES*/
 
 /*INICIO ANIMACIONES*/
-
 .animationTitles {
     animation-duration: 5s;
     animation-name: animationTitles;
@@ -518,7 +490,6 @@ input:focus {
         opacity: 1;
     }
 }
-
 /*FIN ANIMACIONES*/
 
 /*IMAGENES HTML -MEDIOS DE PAGO-*/
@@ -591,11 +562,9 @@ input:focus {
     margin: 15px;
     padding: 15px;
 }
-
 /*FIN DE LAS CLASES EN LOS HTML*/
 
 /*FORMULARIO -HTML CONTACTO-*/
-
 .paragraphClass {
     display: flex;
     justify-content: center;
@@ -629,11 +598,9 @@ input:focus {
     padding: 0.5rem;
     align-items: center;    
 }
-
 /*FIN FORMULARIO -HTML CONTACTO-*/
 
 /*INICIO ETIQUETAS EN LOS HTML*/
-
 h1 {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);    
     color: rgb(206, 199, 179);
@@ -703,5 +670,4 @@ tr td {
 ul li {
     list-style: none;
 }
-
 /*FIN ETIQUETAS*/
