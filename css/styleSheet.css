@@ -244,6 +244,10 @@ nav li:hover > ul > li {
     background-color: darkgrey !important;
 }
 
+img.d-block, .w-100 {
+    width: 200px !important;
+}
+
 /*TABLA HTML 'NUESTROS PRODUCTOS'*/
 
 .tableClass { 

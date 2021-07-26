@@ -81,7 +81,7 @@
             </ul>                       
         </nav>         
     </header>
-    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <div style="--bs-breadcrumb-divider: '>';" title="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Estas en la siguiente ruta</li>
             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -98,22 +98,60 @@
     <main>
         <section id="imgSection3">            
             <!--Distintos tipos de chimichurri-->
-            <h2 class="animationTitles">Chimichurris</h2>            
-            <div class="classImagesChimichurris">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_ahumado.png" alt="chimi_ahumado">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_clasico_argentino.png" alt="chimi_clasico_argentino">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_berenjena.png" alt="chimi_de_berenjena">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_cerveza.png" alt="chimi_de_cerveza">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_hierbas.png" alt="chimi_de_hierbas">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_jamon_ahumado.png" alt="chimi_de_jamon_ahumado">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_limon.png" alt="chimi_de_limon">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_manteca.png" alt="chimi_de_manteca">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_mostaza_y_miel.png" alt="chimi_de_mostaza_y_miel">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_naranja.png" alt="chimi_de_naranja">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_palta.png" alt="chimi_de_palta">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_de_tomate.png" alt="chimi_de_tomate">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_picante.png" alt="chimi_picante">
-                <img class="transformProductsImg" src="../images/imagenes_productos_empresa/chimichurris/chimi_extra_picante.png" alt="chimi_extra_picante">
+            <h2 class="animationTitles">Chimichurris</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_ahumado.png" class="d-block w-100" alt="chimi_ahumado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_clasico_argentino.png" class="d-block w-100" alt="chimi_clasico_argentino">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_berenjena.png" class="d-block w-100" alt="chimi_de_berenjena">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_cerveza.png" class="d-block w-100" alt="chimi_de_cerveza">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_hierbas.png" class="d-block w-100" alt="chimi_de_hierbas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_jamon_ahumado.png" class="d-block w-100" alt="chimi_de_jamon_ahumado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_limon.png" class="d-block w-100" alt="chimi_de_limon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_manteca.png" class="d-block w-100" alt="chimi_de_manteca">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_mostaza_y_miel.png" class="d-block w-100" alt="chimi_de_mostaza_y_miel">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_naranja.png" class="d-block w-100" alt="chimi_de_naranja">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_palta.png" class="d-block w-100" alt="chimi_de_palta">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_de_tomate.png" class="d-block w-100" alt="chimi_de_tomate">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_picante.png" class="d-block w-100" alt="chimi_picante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imagenes_productos_empresa/chimichurris/chimi_extra_picante.png" class="d-block w-100" alt="chimi_extra_picante">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <!--Distintos tipos de salmuera-->
             <h2 class="animationTitles">Salmuera</h2>

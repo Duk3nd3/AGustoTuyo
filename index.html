@@ -79,18 +79,18 @@
                 <li style="float:right"> <a href="">Ingresa a tu cuenta</a></li>
                 <!--Carrito de compras clientes-->
                 <li style="float:right"> <a href=""><div>Mis compras</div></a></li>
-                <div class="alert alert-warning alert-dismissible fade show animationPopUp" role="alert">
-                    <!--  Mensaje Oferta Barra de Navegacion  -->
-                    <div id="alert">
-                        <strong>¡HOLA!</strong> Bienvenid@, por el momento este sitio se encuentra en construcción, te pedimos disculpas por las molestias ocasionadas. Podes cerrar este mensaje dando clic sobre la cruz que se encuentra en la esquina superior derecha. ¡MUCHAS GRACIAS!
-                    </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </ul>
+            <div class="alert alert-warning alert-dismissible fade show animationPopUp" role="alert">
+                <!--  Mensaje Oferta Barra de Navegacion  -->
+                <div id="alert">
+                    <strong>¡HOLA!</strong> Bienvenid@, por el momento este sitio se encuentra en construcción, te pedimos disculpas por las molestias ocasionadas. Podes cerrar este mensaje dando clic sobre la cruz que se encuentra en la esquina superior derecha. ¡MUCHAS GRACIAS!
                 </div>
-            </ul>                       
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>                       
         </nav>         
     </header>
     <!--  Se muestra al cliente en que pagina está  -->
-    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <div style="--bs-breadcrumb-divider: '>';" title="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Estas en la siguiente ruta</li>
             <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -150,13 +150,9 @@
             </ol>                      
             <h3 class="classTitleReferences">Referencia</h3>
             <ul class="classStyleReferences">
-                <div class="spinner-grow text-success"  role="status">
-                    <span class="visually-hidden">OFF...</span>
-                </div>
-                <li class="classOffDayReference transformRefCalendar ">Miercoles de OFERTAS</li>
-                <div class="spinner-grow text-danger" role="status">
-                    <span class="visually-hidden">CLOSED...</span>
-                </div>
+                <li class=" spinner-grow text-success"></li>
+                <li class="classOffDayReference transformRefCalendar">Miercoles de OFERTAS</li>
+                <li class="spinner-grow text-danger"></li>
                 <li class="classClosedReference transformRefCalendar">Sin atención al público</li>
             </ul>
         </section>
