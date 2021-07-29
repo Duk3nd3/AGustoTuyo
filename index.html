@@ -15,11 +15,11 @@
     </head>
     <!--Aplicamos color al fondo de la pagina con ID backgroundWeb-->
     <body id="backgroundWeb">    
-        <header>
+        <header>   
             <!--Barra de navegacion-->
             <nav class="mediaQueryNav-1024px">
                 <!--Clase para el menu de navegacion-->                     
-                <ul class="navMenu">                            
+                <ul class="navMenu">
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="../pages/nuestros_productos.html">NUESTROS PRODUCTOS</a>
                         <ul>
@@ -80,22 +80,14 @@
                     <!--Carrito de compras clientes-->
                     <li style="float:right"> <a href=""><div>Mis compras</div></a></li>
                 </ul>
-                <div class="alert alert-warning alert-dismissible fade show animationPopUp" role="alert">
-                    <!--  Mensaje Oferta Barra de Navegacion  -->
-                    <div id="alert">
-                        <strong>¡HOLA!</strong> Bienvenid@, por el momento este sitio se encuentra en construcción, te pedimos disculpas por las molestias ocasionadas. Podes cerrar este mensaje dando clic sobre la cruz que se encuentra en la esquina superior derecha. ¡MUCHAS GRACIAS!
-                    </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>                       
             </nav>         
         </header>
         <!--  Se muestra al cliente en que pagina está  -->
-        <div style="--bs-breadcrumb-divider: '>';" title="breadcrumb">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Estas en la siguiente ruta</li>
                 <li class="breadcrumb-item active" aria-current="page">Home</li>
             </ol>
-        </div>
+        </nav>
         <!--Eslogan de la Empresa-->
         <h1 class="mediaQueryColor-h1 animationTitles">Conservas Artesanales 100% Naturales</h1>
         <!--Imagen logo empresa-->
@@ -153,14 +145,32 @@
                         <div class="row classStyleReferences">
                             <div class="alert alert-success d-flex align-items-center" role="alert">
                                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-                                <div>
-                                    Dias en color VERDE: Promociones
+                                <!-- Button trigger modal -->
+                                <button type="button" class="greenBottonStyle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Dias en color VERDE: Promos (CLIC AQUI)
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Miercoles</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Con la compra de 6 o más productos de la variedad que elijas. Tenes un 20% de descuento! GENIAL!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="alert alert-danger d-flex align-items-center" role="alert">
                                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
                                 <div>
-                                    Dias en color ROJO: Sin atención al público
+                                    Dias en color ROJO: <strong style="letter-spacing: 3px;">Cerrado</strong>
                                 </div>
                             </div>
                         </div>

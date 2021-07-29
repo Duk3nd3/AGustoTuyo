@@ -671,3 +671,28 @@ ul li {
     list-style: none;
 }
 /*FIN ETIQUETAS*/
+
+/*EDICION MODAL EN CALENDARIO*/
+
+.greenBottonStyle {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(33, 173, 5, 0.87);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*APLICACION DE BREADCRUMB*/
+
+.breadcrumb-item {
+    margin-left: 3px;
+}
