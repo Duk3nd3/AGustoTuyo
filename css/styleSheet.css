@@ -172,10 +172,9 @@ nav li:hover > ul > li {
 
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
 #imgSection5 {
-  background-image: url(../images/imagen_secciones/imagen_nuestra_historia.png);
+  background-image: url(../images/imagen_secciones/imagen_historia.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-position-x: right;
   margin-right: 25px;
   background-size: 25%;
 }
@@ -501,12 +500,15 @@ input:focus {
   margin: 25px;
 }
 
-/*IMAGEN FRENTE LOCAL HTML -HISTORIA A GUSTO TUYO-*/
+/*IMAGEN LUGARES HTML -HISTORIA A GUSTO TUYO-*/
 .imageCorp {
-  height: 400px;
-  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-rows: repeat(4, 200px);
+  justify-content: center;
+  align-items: center;
   border-radius: 15%;
-  border: dashed 2px black;
+  border: solid 2px #e77f08;
   margin: 15px;
   padding: 15px;
 }
@@ -546,7 +548,6 @@ input:focus {
 }
 
 .classReferenceGoogleMaps {
-  color: blanchedalmond;
   margin: 15px;
   font-size: 20px;
 }
@@ -694,4 +695,60 @@ ul li {
 /*APLICACION DE BREADCRUMB*/
 .breadcrumb-item {
   margin-left: 3px;
+}
+
+/*APLICANDO BEM*/
+/*BEM HTML 'HISTORIA_DE_AGUSTOTUYO'*/
+.classParagraphHistory__h4 {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #889ccf;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+}
+
+.imageCorp__img {
+  display: flex;
+  justify-self: center;
+  border: solid 2px #e77f08;
+  transition: all 1s;
+}
+
+.imageCorp__img:hover {
+  transform: scale(2);
+}
+
+.classReferenceGoogleMaps_style {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #cfbe88;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #c78938;
+}
+
+.videoStyle__modified {
+  display: flex;
+  justify-content: center;
+}
+
+/*BEM HTML 'CONTACTO'*/
+.container__cards {
+  padding: 25px;
+  margin: 25px;
 }
