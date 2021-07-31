@@ -1,0 +1,698 @@
+/*Seleccion universal con asterisco*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*INICIO MENU DE NAVEGACION -ESTILOS GENERALES- */
+nav ul {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+.navMenu ul {
+    position: absolute;
+}
+
+nav a {
+    color: rgb(238, 238, 238);
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+/*PRIMER NIVEL MENU DESPLEGABLE*/
+.navMenu {
+    background: #333;
+    display: table;
+    width: 100%;
+}
+
+.navMenu > li {
+    float: left;
+}
+
+/*SEGUNDO NIVEL MENU DESPLEGABLE*/
+nav li li {
+    background: rgba(53, 51, 51, 0.801);
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    width: 200px;
+}
+
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+.navMenu > li > ul {
+    top: 100%;
+}
+
+/*TERCER NIVEL MENU DESPLEGABLE*/
+.navMenu ul ul {
+    left: 100%;
+    top: 0;
+} 
+/*FIN MENU DE NAVEGACION*/
+
+/*COMIENZA SECCION IDs*/
+
+/*COLOR DE FONDO PARA LOS HTML*/
+#backgroundWeb {
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+}
+
+/*LOGO EMPRESA*/
+#logoCompany {
+    border-radius: 15px;
+    height: 250px; 
+    width: 250px;
+    text-align: center;        
+}
+
+#flexLogoCompany {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*POP-UP ALERTA SITIO EN CONSTRUCCION*/
+#alert {
+    position: relative;
+    padding: 4rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+/*IMAGEN A REEMPLAZAR POR RECETAS ORIGINALES. REFERENCIA: 'Nuestras recetas favoritas' EN INDEX*/
+#favRecipes {
+    border-radius: 15px;
+    height: 300px; width: 700px; 
+    margin: 15px;
+    padding: 15px;
+}
+
+/*BUSCADOR DE LA PAGINA -NO FUNCIONA AUN-*/
+#search {    
+    background-color: lightseagreen;
+    background-size: 24px;
+    width: 500px;    
+}
+
+/*PIE DE PAGINA -FOOTER-*/
+#footer {    
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%); 
+    color: blanchedalmond;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    word-spacing: 3px;
+    padding: 20px;
+    margin: 5px;    
+}
+
+/*BORDES DE LAS TABLAS EN HTML 'NUESTROS PRODUCTOS' Y HTML 'CONTACTO'*/
+#borderTables {
+    border-top: solid 5px rgb(231, 127, 8);
+    border-right: solid 10px rgb(231, 127, 8);
+    border-bottom: solid 7px rgb(231, 127, 8);
+    border-left: solid 12px rgb(231, 127, 8);
+}
+
+/*SECCIONES -SECTIONS- DE LOS HTML*/
+/*SECTION 1 AL 3 CORRESPONDEN HTML INDEX*/
+#imgSection1 {
+    background-image: url(../images/imagen_secciones/business-text-calendar.png);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 15%;
+}
+
+#imgSection2 {
+    background-image: url(../images/imagen_secciones/social-media-web-design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25%;
+}
+
+/*SECTION 3 HTML 'NUESTROS PRODUCTOS' COMPARTIDA CON INDEX -SECTION 4 CORRESPONDE HTML 'NUESTROS PRODUCTOS'*/
+#imgSection3 {
+    background-image: url(../images/imagen_secciones/imagen_condimentos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25%;
+}
+
+#imgSection4 {
+    background-image: url(../images/imagen_secciones/imagen_chef.png);
+    background-position: right;
+    background-repeat: no-repeat;    
+}
+
+/*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
+#imgSection5 {
+    background-image: url(../images/imagen_secciones/imagen_nuestra_historia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-right: 25px;
+    background-size: 25%;
+}
+
+#imgSection6 {
+    background-image: url(../images/imagen_secciones/imagen_mapa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 20%;    
+}
+
+#imgSection7 {
+    background-image: url(../images/imagen_secciones/imagen_video.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 25%;
+}
+
+/*SECTION 8 CORRESPONDE HTML 'MEDIOS DE PAGO'*/
+#imgSection8 {
+    background-image: url(../images/imagen_secciones/medios_de_pago.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+
+/*SECTION 9 CORRESPONDE HTML 'CONTACTO'*/
+#imgSection9 {
+    background-image: url(../images/imagen_secciones/imagen_contactos.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+/*FIN SECCIONES (SECTIONS) HTML*/
+
+/*FIN SECCION IDs*/
+
+/*COMIENZO DE LAS CLASES HTML*/
+.classCards {
+    justify-content: space-around;
+}
+
+.classCardSpecials > img {
+    width: 100px;
+    height: auto;
+}
+
+.card {
+    background-color: darkgrey !important;
+}
+
+.imgCarousel {
+    justify-content: center;
+    width: 200px !important;
+}
+
+/*HTML 'NUESTROS PRODUCTOS'*/
+.classImagesChimichurris {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.classImagesSalmueras {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.classImagnesAderezos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.classImageEscabeche {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+/*FIN HTML 'NUESTROS PRODUCTOS*/
+
+/*PRODUCTOS DESTACADOS HTML -INDEX-*/
+.classFeaturedProducts {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    justify-content: space-evenly;
+}
+
+/*INICIO CALENDARIO CON GRID HTML -INDEX-*/
+.classCalendar {    
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.classStartDay {
+    grid-column: 5;
+}
+
+.classOrderList > li {
+    text-align: right;
+}
+
+.classWeekday {
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(48,172,131,1) 57%, rgba(255,255,255,1) 100%);
+    text-align: center;
+}
+
+.classOffDay {
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(48,148,172,1) 57%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    color: darkgreen;
+}
+
+.classOffDayReference {
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(48,148,172,1) 57%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: darkgreen;
+    margin: 5px;
+}
+
+.classClosed {    
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(34,46,48,1) 57%, rgba(255,255,255,1) 100%);
+    font-style: italic;
+    color: darkred;
+}
+
+.classClosedReference {    
+    background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(34,46,48,1) 57%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-style: italic;
+    color: darkred;
+    margin: 5px;
+}
+
+.classStyleReferences { 
+    width: 400px;
+}
+
+.classCalendarMonthTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: 15px;
+    color: olive;
+    font-size: 30px;
+}
+
+.classTitleReferences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: olive;
+    margin-top: 15px;
+}
+/*FIN CALENDARIO CON GRID HTML -INDEX-*/
+
+/*INICIO USO DE MEDIA QUERY HTML -INDEX-*/
+/*Media Query en screen de hasta 425px*/
+@media (max-width: 425px) {
+    #footer {
+        margin-right: 5%;
+    }
+    #imgSection2 {
+        background-size: 0 0;
+    }
+    #imgSection3 {
+        background-size: 0 0;
+    }
+    .mediaQueryColor-h1 {
+        color: rgba(209, 7, 17, 0.781);
+    }
+    .classFeaturedProducts {
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+    .classCalendar, .classOrderList {
+        width: 75%;
+    }
+    h3 {
+        display: none;
+    }
+}
+
+/*Media Query en screen de hasta 768px*/
+@media (max-width: 768px) { 
+    #imgSection1 {
+        background-size: 0 0;
+    }
+    #imgSection2 {
+        background-size: 0 0;
+    }
+    #imgSection3 {
+        background-size: 0 0;
+    }
+    .mediaQueryColor-h1 {
+        color: rgba(209, 7, 17, 0.781);
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #footer {
+        margin-right: 5%;
+    }
+}
+
+/*Media Query en screen de hasta 1024px*/
+@media (max-width: 1024px) {
+    #imgSection1 {
+        background-size: 15%;
+        background-position: 790px;
+    }
+    #imgSection2 {
+        background-position: 600px;
+    }
+    #imgSection3 {
+        background-size: 20%;
+        background-position: 790px;
+    }
+    #footer {
+        margin-right: 5%;
+    }
+    .mediaQueryColor-h1 {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .mediaQueryNav-1024px {
+        width: 97%;
+    }
+}
+
+@media (max-width: 1440px) {
+    #imgSection9 {
+        background-size: 0 0;
+    }
+}
+/*FIN USO DE MEDIA QUERY HTML -INDEX-*/
+
+/*INICIO TRANSFORMACIONES*/
+/*APLICADO A SOCIAL MEDIA*/
+.transformLogosSocialMedia:hover {
+    border: 2px solid black;
+    transform: translate(3px, 2px);
+    transition: all 0.5s;
+}
+
+.transformInstagramNameColor:hover {
+    color: rgb(201, 34, 34);
+}
+
+.transformFacebookNameColor:hover {
+    color: rgb(226, 226, 226);
+}
+
+.transformWhatsappNameColor:hover {
+    color: rgb(11, 173, 19);
+}
+
+/*APLICADO A IMAGENES PRODUCTOS*/
+.transformProductsImg:hover {
+    transform: rotate(45deg);
+}
+
+/*APLICADO REFERENCIA CALENDARIO*/
+.transformRefCalendar:hover {
+    transform: scale(1.2,1.2);
+}
+
+/*APLICANDO INPUT FOCUS DENTRO DE LA TABLA CONTACTOS*/
+input:focus {
+    width: 200px;
+    font-size: 20px;
+}
+/*FIN TRANSFORMACIONES*/
+
+/*INICIO ANIMACIONES*/
+.animationTitles {
+    animation-duration: 5s;
+    animation-name: animationTitles;
+}
+
+@keyframes animationTitles {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animationPopUp {
+    animation-duration: 2s;
+    animation-name: animationPopUp;
+}
+
+@keyframes animationPopUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*FIN ANIMACIONES*/
+
+/*IMAGENES HTML -MEDIOS DE PAGO-*/
+.cashImages {
+    border-radius: 15%;  
+    width: 300px;   
+    height: auto;
+    padding: 50px;
+    margin: 25px;
+}
+
+/*IMAGEN FRENTE LOCAL HTML -HISTORIA A GUSTO TUYO-*/
+.imageCorp {    
+    height: 400px;
+    width: 300px;
+    border-radius: 15%;
+    border: dashed 2px black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.classParagraphHistory {
+    margin: 10px;
+    padding: 10px;
+}
+
+/*LETRAS SOCIAL MEDIA HTML -INDEX Y CONTACTO-*/
+.letterSocialMedia {    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+/*PQUEÑO ESTILO PARA SOCIAL MEDIA HTML -INDEX Y CONTACTO-*/
+.socialMediaStyle {
+    display: flex;
+    margin: 15px;
+    padding: 15px;        
+}
+
+.classMediaImage {
+    display: flex;
+    align-content: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+/*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/
+.googleMapsStype {
+    margin: 15px;
+    padding: 15px;    
+}
+
+.classReferenceGoogleMaps {
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+}
+
+/*VIDE EN HTML -HISTORIA A GUSTO TUYO-*/
+.videoStyle {
+    margin: 15px;
+    padding: 15px;
+}
+
+/*PEQUEÑO ESTILO PARA HTML -MEDIOS DE PAGO-*/
+.classPayments {
+    margin: 15px;
+    padding: 15px;
+}
+/*FIN DE LAS CLASES EN LOS HTML*/
+
+/*FORMULARIO -HTML CONTACTO-*/
+.paragraphClass {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    color: blanchedalmond;
+    font-size: 1.5em;
+}
+
+.fatherFormStyle {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 25px;   
+}
+
+.flexFatherForm {
+    width: 700px;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);   
+    color: blanchedalmond; 
+    border-radius: 15%;    
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly; 
+    align-items: center;  
+}
+
+.flexChilds {    
+    display: flex;    
+    margin: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;    
+}
+/*FIN FORMULARIO -HTML CONTACTO-*/
+
+/*INICIO ETIQUETAS EN LOS HTML*/
+h1 {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);    
+    color: rgb(206, 199, 179);
+    list-style: none;        
+    font-family: 'Yomogi', cursive;
+    font-size: 25px; 
+    text-align: center;   
+    border-top: outset 10px rgb(166, 185, 179);
+    border-right: outset 15px rgb(166, 185, 179);
+    border-bottom: outset 10px rgb(166, 185, 179);
+    border-left: outset 15px rgb(166, 185, 179);
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);
+    color: rgb(206, 199, 179);
+    text-align: center;
+    border-top: outset 10px rgb(166, 185, 179);
+    border-right: outset 15px rgb(166, 185, 179);
+    border-bottom: outset 10px rgb(166, 185, 179);
+    border-left: outset 15px rgb(166, 185, 179); 
+}
+
+h3 {
+    color: crimson;
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin: 15px;
+    padding: 15px;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+    padding: 5px;
+    margin: 5px;
+}
+
+h5 {
+    color: grey;
+    font-size: 15px;    
+}
+
+div ul li a {     
+    color: ivory;           
+    font-family: "Brush Script MT", cursive;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 15px;
+    width: 100px; height: auto;
+}
+
+th {
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+}
+
+tr td {
+    padding-left: 50px; 
+    font-family: sans-serif;   
+}
+
+ul li {
+    list-style: none;
+}
+/*FIN ETIQUETAS*/
+
+/*EDICION MODAL EN CALENDARIO*/
+
+.greenBottonStyle {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(33, 173, 5, 0.87);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*APLICACION DE BREADCRUMB*/
+
+.breadcrumb-item {
+    margin-left: 3px;
+}

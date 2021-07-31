@@ -1,0 +1,25 @@
+{
+  "name": "duk3nd3.github.io",
+  "version": "1.0.0",
+  "description": "A_Gusto_Tuyo_Prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/clonedStyle.scss css/styleSheet.css --output-style=expanded",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duk3nd3/Duk3nd3.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duk3nd3/Duk3nd3.github.io/issues"
+  },
+  "homepage": "https://github.com/Duk3nd3/Duk3nd3.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
