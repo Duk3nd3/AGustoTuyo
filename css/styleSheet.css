@@ -577,9 +577,13 @@ input:focus {
 }
 
 /*PEQUEÑO ESTILO PARA HTML -MEDIOS DE PAGO-*/
-.classPayments {
-  margin: 15px;
-  padding: 15px;
+.paymentStyles {
+  display: flex;
+  justify-content: center;
+}
+
+.termsCenter {
+  justify-content: center;
 }
 
 /*FIN DE LAS CLASES EN LOS HTML*/
@@ -769,4 +773,10 @@ ul li {
 .container__cards {
   padding: 15px;
   margin: 15px;
+}
+
+/*BEM HTML 'MEDIOS DE PAGO'*/
+.paymentStyles__center {
+  align-self: center;
+  color: lime;
 }
