@@ -233,6 +233,18 @@ nav li:hover > ul > li {
     background-color: darkgrey !important;
 }
 
+.cardTransfBankInfo {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 18px;
+    color: #ffffff; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #cfbe88; 
+    margin: 0 0 25px; 
+    overflow: hidden;
+    margin-top: 15px;
+}
+
 .imgCarousel {
     justify-content: center;
     width: 200px !important;
@@ -263,6 +275,17 @@ nav li:hover > ul > li {
     justify-content: space-evenly;
     margin: 25px;
 }
+
+.carousel-control-prev-icon {
+    position: relative;
+    right: 50px;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    left: 50px;
+}
+
 /*FIN HTML 'NUESTROS PRODUCTOS*/
 
 /*PRODUCTOS DESTACADOS HTML -INDEX-*/
@@ -789,4 +812,10 @@ ul li {
 .paymentStyles__center {
     align-self: center;
     color: lime;
+}
+
+/*BEM HTML 'NUESTROS PRODUCTOS'*/
+
+.card-body__textColor {
+    color: #ffffff;
 }
