@@ -609,7 +609,7 @@ input:focus {
 }
 
 /*FIN DE LAS CLASES EN LOS HTML*/
-/*FORMULARIO -HTML CONTACTO-*/
+/*HTML -CONTACTO-*/
 .paragraphClass {
   display: flex;
   justify-content: center;
@@ -619,32 +619,6 @@ input:focus {
   font-size: 1.5em;
 }
 
-.fatherFormStyle {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-
-.flexFatherForm {
-  width: 700px;
-  height: 500px;
-  background: linear-gradient(90deg, black 0%, #a8a8a8 75%, white 100%);
-  color: blanchedalmond;
-  border-radius: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.flexChilds {
-  display: flex;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  align-items: center;
-}
-
-/*FIN FORMULARIO -HTML CONTACTO-*/
 /*INICIO ETIQUETAS EN LOS HTML*/
 h1 {
   background: linear-gradient(90deg, black 0%, #a8a8a8 75%, white 100%);
