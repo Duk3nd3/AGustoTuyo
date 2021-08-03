@@ -40,9 +40,10 @@ nav a:hover {
 
 /*PRIMER NIVEL MENU DESPLEGABLE*/
 .navMenu {
-    background: #333;
+    background: linear-gradient(90deg, rgba(20,99,99,1) 0%, rgba(20,99,99,0.742734593837535) 47%, rgba(20,99,99,0.5550595238095238) 100%);
     display: table;
     width: 100%;
+    height: 100px;
 }
 
 .navMenu > li {
@@ -51,7 +52,7 @@ nav a:hover {
 
 /*SEGUNDO NIVEL MENU DESPLEGABLE*/
 nav li li {
-    background: rgba(53, 51, 51, 0.801);
+    background: linear-gradient(90deg, rgba(20,99,99,1) 0%, rgba(20,99,99,0.742734593837535) 47%, rgba(20,99,99,0.5550595238095238) 100%);
     max-height: 0;
     overflow: hidden;
     transition: all .5s;
@@ -124,7 +125,7 @@ nav li:hover > ul > li {
 
 /*PIE DE PAGINA -FOOTER-*/
 #footer {    
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%); 
+    background: linear-gradient(90deg, rgba(20,99,99,1) 0%, rgba(20,99,99,0.742734593837535) 47%, rgba(20,99,99,0.5550595238095238) 100%); 
     color: blanchedalmond;
     border-radius: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -149,7 +150,8 @@ nav li:hover > ul > li {
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 15%;
+    background-size: 10%;
+    margin-right: 15px;
 }
 
 #imgSection2 {
@@ -157,22 +159,17 @@ nav li:hover > ul > li {
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 25%;
+    background-size: 15%;
+    margin-right: 25px;
 }
 
-/*SECTION 3 HTML 'NUESTROS PRODUCTOS' COMPARTIDA CON INDEX -SECTION 4 CORRESPONDE HTML 'NUESTROS PRODUCTOS'*/
+/*SECTION 3 HTML 'NUESTROS PRODUCTOS' CON INDEX*/
 #imgSection3 {
     background-image: url(../images/imagen_secciones/imagen_condimentos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 25%;
-}
-
-#imgSection4 {
-    background-image: url(../images/imagen_secciones/imagen_chef.png);
-    background-position: right;
-    background-repeat: no-repeat;    
+    background-size: 20%;
 }
 
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
@@ -629,28 +626,56 @@ input:focus {
 
 /*INICIO ETIQUETAS EN LOS HTML*/
 h1 {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);    
+    position: relative;
+    text-align: center;
     color: rgb(206, 199, 179);
     list-style: none;        
     font-family: 'Yomogi', cursive;
-    font-size: 25px; 
-    text-align: center;   
-    border-top: outset 10px rgb(166, 185, 179);
-    border-right: outset 15px rgb(166, 185, 179);
-    border-bottom: outset 10px rgb(166, 185, 179);
-    border-left: outset 15px rgb(166, 185, 179);
+    font-size: 25px;
+}
+
+h1::after,h1::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: #146363;
+    top: 0.6em;
+}
+
+h1::before {
+    left: 350px;
+}
+
+h1::after {
+    right: 350px;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    color: rgb(206, 199, 179);
+    list-style: none;        
+    font-family: 'Yomogi', cursive;
     margin: 5px;
     padding: 5px;
 }
 
-h2 {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(168,168,168,1) 75%, rgba(255,255,255,1) 100%);
-    color: rgb(206, 199, 179);
-    text-align: center;
-    border-top: outset 10px rgb(166, 185, 179);
-    border-right: outset 15px rgb(166, 185, 179);
-    border-bottom: outset 10px rgb(166, 185, 179);
-    border-left: outset 15px rgb(166, 185, 179); 
+h2::after,h2::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: #146363;
+    top: 0.6em;
+}
+
+h2::before {
+    left: 350px;
+}
+
+h2::after {
+    right: 350px;
 }
 
 h3 {
