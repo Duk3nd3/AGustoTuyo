@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*REFERENCIA GOOGLE MAPS*/
+/*H1 Y H2*/
+/*IMAGENES 'QUIENES SOMOS'*/
 /*Seleccion universal con asterisco*/
 * {
   margin: 0px;
@@ -649,8 +652,7 @@ h2 {
   color: #cec7b3;
   list-style: none;
   font-family: 'Yomogi', cursive;
-  margin: 5px;
-  padding: 5px;
+  font-size: 25px;
 }
 
 h2::after, h2::before {
@@ -771,11 +773,11 @@ ul li {
 
 .classReferenceGoogleMaps_style {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #ffffff;
-  font-size: 18px;
+  color: #bd6b00;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
-  background: #cfbe88;
+  background: radial-gradient(circle, #146363 67%, white 100%, white 100%);
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;

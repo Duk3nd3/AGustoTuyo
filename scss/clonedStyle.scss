@@ -1,8 +1,4 @@
-@import 'index-styles';
-@import 'product-styles';
-@import 'payment-styles';
-@import 'history-styles';
-@import 'contact-styles';
+@import 'mixin';
 
 /*Seleccion universal con asterisco*/
 * {
@@ -546,15 +542,7 @@ input:focus {
 
 /*IMAGEN LUGARES HTML -HISTORIA A GUSTO TUYO-*/
 .imageCorp {
-    display: grid;
-    grid-template-columns: repeat(4, 4fr);
-    grid-template-rows: repeat(4, 200px);
-    justify-content: center;
-    align-items: center;
-    border-radius: 15%;
-    border: solid 2px rgb(231, 127, 8);
-    margin: 15px;
-    padding: 15px;
+    @include pictures;
 }
 
 .classParagraphHistory {
@@ -626,12 +614,7 @@ input:focus {
 
 /*INICIO ETIQUETAS EN LOS HTML*/
 h1 {
-    position: relative;
-    text-align: center;
-    color: rgb(206, 199, 179);
-    list-style: none;        
-    font-family: 'Yomogi', cursive;
-    font-size: 25px;
+    @include titles;
 }
 
 h1::after,h1::before {
@@ -652,13 +635,7 @@ h1::after {
 }
 
 h2 {
-    position: relative;
-    text-align: center;
-    color: rgb(206, 199, 179);
-    list-style: none;        
-    font-family: 'Yomogi', cursive;
-    margin: 5px;
-    padding: 5px;
+    @include titles;
 }
 
 h2::after,h2::before {
@@ -768,10 +745,7 @@ ul li {
 }
 
 .imageCorp__img {
-    display: flex;
-    justify-self: center;
-    border: solid 2px rgb(231, 127, 8);
-    transition: all 1s;
+    @include pictures_lvl_2;
 }
 
 .imageCorp__img:hover {
@@ -779,19 +753,7 @@ ul li {
 }
 
 .classReferenceGoogleMaps_style {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #ffffff; 
-    font-size: 18px; 
-    font-weight: 400; 
-    text-align: center; 
-    background: #cfbe88; 
-    margin: 0 0 25px; 
-    overflow: hidden; 
-    padding: 20px; 
-    border-radius: 35px 0px 35px 0px; 
-    -moz-border-radius: 35px 0px 35px 0px; 
-    -webkit-border-radius: 35px 0px 35px 0px; 
-    border: 2px solid #c78938;
+    @include reference;
 }
 
 .videoStyle__modified {
