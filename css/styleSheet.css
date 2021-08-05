@@ -76,7 +76,7 @@ nav li:hover > ul > li {
 /*COMIENZA SECCION IDs*/
 /*COLOR DE FONDO PARA LOS HTML*/
 #backgroundWeb {
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: beige;
   width: 100%;
   height: 100%;
 }
@@ -92,8 +92,8 @@ nav li:hover > ul > li {
 #flexLogoCompany {
   display: flex;
   justify-content: center;
-  margin: 5px;
-  padding: 5px;
+  margin: 75px;
+  padding: 75px;
 }
 
 /*POP-UP ALERTA SITIO EN CONSTRUCCION*/
@@ -125,12 +125,21 @@ nav li:hover > ul > li {
 #footer {
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
   color: blanchedalmond;
-  border-radius: 5px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: lighter;
   word-spacing: 3px;
-  padding: 20px;
-  margin: 5px;
+  margin-top: 50px;
+  padding: 25px;
+}
+
+.classFooter {
+  display: flex;
+  height: 25px;
+}
+
+.classFooter-form {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*BORDES DE LAS TABLAS EN HTML 'NUESTROS PRODUCTOS' Y HTML 'CONTACTO'*/
@@ -218,13 +227,25 @@ nav li:hover > ul > li {
   justify-content: space-around;
 }
 
+.card-title {
+  margin: 1rem;
+}
+
+.card-text {
+  margin: 1rem;
+}
+
 .classCardSpecials > img {
-  width: 100px;
+  width: 105px;
   height: auto;
 }
 
 .card {
+  align-self: center;
+  align-items: center;
   background-color: darkgrey !important;
+  margin: 75px;
+  padding: 75px;
 }
 
 .cardTransfBankInfo {
@@ -255,27 +276,32 @@ nav li:hover > ul > li {
 .classImagesSalmueras {
   display: flex;
   justify-content: space-evenly;
-  margin: 25px;
+  margin: 75px;
+  padding: 75px;
 }
 
 .classImagnesAderezos {
   display: flex;
   justify-content: space-evenly;
-  margin: 25px;
+  margin: 75px;
+  padding: 75px;
 }
 
 .classImageEscabeche {
   display: flex;
   justify-content: space-evenly;
-  margin: 25px;
+  margin: 75px;
+  padding: 75px;
 }
 
 .carousel-control-prev-icon {
+  background-image: url(/images/imagenes_carousel/icon-left.png) !important;
   position: relative;
   right: 50px;
 }
 
 .carousel-control-next-icon {
+  background-image: url(/images/imagenes_carousel/icon-right.png) !important;
   position: relative;
   left: 50px;
 }
@@ -287,6 +313,7 @@ nav li:hover > ul > li {
   align-items: center;
   margin-right: 100px;
   justify-content: space-evenly;
+  margin: 75px;
 }
 
 /*INICIO CALENDARIO CON GRID HTML -INDEX-*/
@@ -308,14 +335,15 @@ nav li:hover > ul > li {
 }
 
 .classWeekday {
-  background: linear-gradient(90deg, #f7f7f7 0%, #30ac83 57%, white 100%);
+  background: #146363;
   text-align: center;
+  color: white;
 }
 
 .classOffDay {
-  background: linear-gradient(90deg, #f7f7f7 0%, #3094ac 57%, white 100%);
+  background: #3a9377;
   background-repeat: no-repeat;
-  color: darkgreen;
+  color: white;
 }
 
 .classOffDayReference {
@@ -327,9 +355,11 @@ nav li:hover > ul > li {
 }
 
 .classClosed {
-  background: linear-gradient(90deg, #f7f7f7 0%, #222e30 57%, white 100%);
+  background: #423c3c;
   font-style: italic;
-  color: darkred;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .classClosedReference {
@@ -348,7 +378,7 @@ nav li:hover > ul > li {
 .classCalendarMonthTitle {
   text-align: center;
   margin-bottom: 2rem;
-  margin: 15px;
+  margin: 75px;
   color: olive;
   font-size: 30px;
 }
@@ -574,6 +604,10 @@ input:focus {
   padding: 15px;
 }
 
+.classMediaCenter {
+  justify-content: center;
+}
+
 .classMediaImage {
   display: flex;
   align-content: center;
@@ -623,7 +657,7 @@ input:focus {
 h1 {
   position: relative;
   text-align: center;
-  color: #cec7b3;
+  color: #3b3b3b;
   list-style: none;
   font-family: 'Yomogi', cursive;
   font-size: 25px;
@@ -649,7 +683,7 @@ h1::after {
 h2 {
   position: relative;
   text-align: center;
-  color: #cec7b3;
+  color: #3b3b3b;
   list-style: none;
   font-family: 'Yomogi', cursive;
   font-size: 25px;
@@ -724,7 +758,7 @@ ul li {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(33, 173, 5, 0.87);
+  color: #2f7920;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -740,6 +774,10 @@ ul li {
 /*APLICACION DE BREADCRUMB*/
 .breadcrumb-item {
   margin-left: 3px;
+}
+
+.classColorHome {
+  color: darkcyan;
 }
 
 /*APLICANDO BEM*/
@@ -807,4 +845,5 @@ ul li {
 /*BEM HTML 'NUESTROS PRODUCTOS'*/
 .card-body__textColor {
   color: #ffffff;
+  margin: 1rem;
 }
