@@ -1,12 +1,13 @@
 /*REFERENCIA GOOGLE MAPS*/
 @mixin reference {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #bd6b00; 
+    color: #000000; 
     font-size: 20px; 
     font-weight: 400; 
     text-align: center; 
-    background: radial-gradient(circle, rgba(20,99,99,1) 67%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    background-color: #fff;
     margin: 0 0 25px; 
+    margin-bottom: 100px;
     overflow: hidden; 
     padding: 20px; 
     border-radius: 35px 0px 35px 0px; 
@@ -34,7 +35,7 @@
     align-items: center;
     border-radius: 15%;
     border: solid 2px rgb(231, 127, 8);
-    margin: 15px;
+    margin-bottom: 150px;
     padding: 15px;
 }
 
