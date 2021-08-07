@@ -243,7 +243,7 @@ nav li:hover > ul > li {
 /*SECCIONES -SECTIONS- DE LOS HTML*/
 /*SECTION 1 AL 3 CORRESPONDEN HTML INDEX*/
 #imgSection1 {
-    background-image: url(../images/imagen_secciones/business-text-calendar.png);    
+    background-image: url(../images/imagen_secciones/business-text-calendar-min.png);    
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -252,7 +252,7 @@ nav li:hover > ul > li {
 }
 
 #imgSection2 {
-    background-image: url(../images/imagen_secciones/social-media-web-design.png);
+    background-image: url(../images/imagen_secciones/social-media-web-design-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -262,7 +262,7 @@ nav li:hover > ul > li {
 
 /*SECTION 3 HTML 'NUESTROS PRODUCTOS' CON INDEX*/
 #imgSection3 {
-    background-image: url(../images/imagen_secciones/imagen_condimentos.png);
+    background-image: url(../images/imagen_secciones/imagen_condimentos-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -271,7 +271,7 @@ nav li:hover > ul > li {
 
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
 #imgSection5 {
-    background-image: url(../images/imagen_secciones/imagen_historia.png);
+    background-image: url(../images/imagen_secciones/imagen_historia-min.png);
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 25px;
@@ -279,7 +279,7 @@ nav li:hover > ul > li {
 }
 
 #imgSection6 {
-    background-image: url(../images/imagen_secciones/imagen_mapa.png);
+    background-image: url(../images/imagen_secciones/imagen_mapa-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -287,7 +287,7 @@ nav li:hover > ul > li {
 }
 
 #imgSection7 {
-    background-image: url(../images/imagen_secciones/imagen_video.png);
+    background-image: url(../images/imagen_secciones/imagen_video-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -296,7 +296,7 @@ nav li:hover > ul > li {
 
 /*SECTION 8 CORRESPONDE HTML 'MEDIOS DE PAGO'*/
 #imgSection8 {
-    background-image: url(../images/imagen_secciones/medios_de_pago.png);
+    background-image: url(../images/imagen_secciones/medios_de_pago-min.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 25%;
@@ -304,7 +304,7 @@ nav li:hover > ul > li {
 
 /*SECTION 9 CORRESPONDE HTML 'CONTACTO'*/
 #imgSection9 {
-    background-image: url(../images/imagen_secciones/imagen_contactos.png);
+    background-image: url(../images/imagen_secciones/imagen_contactos-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15%;
@@ -336,10 +336,14 @@ nav li:hover > ul > li {
     height: auto;
 }
 
+.card-title, .card-header {
+    color: rgb(0, 0, 0);
+}
+
 .card {
     align-self: center;
     align-items: center;
-    background-color: darkgrey !important;
+    background-color: rgb(255, 255, 255) !important;
     margin: 75px;
     padding: 75px;
 }
@@ -397,7 +401,7 @@ nav li:hover > ul > li {
 }
 
 .carousel-control-next-icon {
-    background-image: url(/images/imagenes_carousel/icon-right.png) !important;
+    background-image: url(/images/imagenes_carousel/icon-right-min.png) !important;
     position: relative;
     left: 50px;
 }
@@ -745,7 +749,7 @@ input:focus {
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px; 
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
 }
 
@@ -875,9 +879,7 @@ ul li {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #131212; 
     font-size: 18px; 
-    font-weight: 400; 
     text-align: center; 
-    background: #ffffff; 
     margin: 0 0 25px; 
     overflow: hidden; 
     padding: 20px; 
@@ -921,6 +923,13 @@ ul li {
 /*BEM HTML 'NUESTROS PRODUCTOS'*/
 
 .card-body__textColor {
-    color: #ffffff;
+    color: #000000;
     margin: 1rem;
 }
+
+/*ERROR 404 ESTILO*/
+
+
+
+
+
