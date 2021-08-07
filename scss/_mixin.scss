@@ -43,3 +43,45 @@
     border: solid 2px rgb(231, 127, 8);
     transition: all 1s;
 }
+
+/*IMAGENES 'NUESTROS PRODUCTOS'*/
+
+@mixin imagenes-aderezos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px;
+    padding: 75px;
+}
+
+/*IMAGENES 'MEDIOS DE PAGO'*/
+
+@mixin image-payments {
+    border-radius: 15%;  
+    width: 300px;   
+    height: auto;
+    padding: 50px;
+    margin: 25px;
+}
+
+/*ESTILOS 'INDEX' & 'CONTACTOS' SOCIAL MEDIA*/
+
+@mixin social-media-letters-style {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+@mixin social-media-style {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+}
+
+@mixin social-media-image {
+    display: flex;
+    align-content: center;
+    margin: 15px;
+    padding: 15px;
+}
