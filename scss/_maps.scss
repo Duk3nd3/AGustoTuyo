@@ -1,0 +1,17 @@
+$services: (
+    Entregas: #55acee,
+    Presupuestos: #3a5795,
+    Ventas: #C25E30,
+    Empresa: #13f453,
+    Equipo: #631417,
+    Unete: #416314,
+    Partners: #142f63,
+    Home: #985c78,
+    Ayuda: #e7f413
+);
+
+@each $style, $color in $services {
+    .class--#{$style}{
+        color: $color;
+    }
+}
