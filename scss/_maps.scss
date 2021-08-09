@@ -1,17 +1,23 @@
+/*SE APLICO SENCILLAMENTE 'MAPS' SOLO SOBRE EL FOOTER HTML COMO PRUEBA A EVALUAR*/
+
 $services: (
-    Entregas: #55acee,
-    Presupuestos: #3a5795,
-    Ventas: #C25E30,
-    Empresa: #13f453,
-    Equipo: #631417,
-    Unete: #416314,
-    Partners: #142f63,
-    Home: #985c78,
-    Ayuda: #e7f413
+    color-text-footer: rgb(255, 255, 255)
 );
 
-@each $style, $color in $services {
+@each $style, $color-text-footer in $services {
     .class--#{$style}{
-        color: $color;
+        color: $color-text-footer;
+    }
+}
+
+$fs-test: (
+    light: #ccc
+);
+
+.class--color-text-footer {
+    @if map-has-key($fs-test, color) {
+        font-size: 1000px;
+    } @else {
+        font-size: 20px;
     }
 }

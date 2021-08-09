@@ -1,38 +1,11 @@
 @charset "UTF-8";
-.class--Entregas {
-  color: #55acee;
+/*SE APLICO SENCILLAMENTE 'MAPS' SOLO SOBRE EL FOOTER HTML COMO PRUEBA A EVALUAR*/
+.class--color-text-footer {
+  color: white;
 }
 
-.class--Presupuestos {
-  color: #3a5795;
-}
-
-.class--Ventas {
-  color: #C25E30;
-}
-
-.class--Empresa {
-  color: #13f453;
-}
-
-.class--Equipo {
-  color: #631417;
-}
-
-.class--Unete {
-  color: #416314;
-}
-
-.class--Partners {
-  color: #142f63;
-}
-
-.class--Home {
-  color: #985c78;
-}
-
-.class--Ayuda {
-  color: #e7f413;
+.class--color-text-footer {
+  font-size: 20px;
 }
 
 /*REFERENCIA GOOGLE MAPS*/
