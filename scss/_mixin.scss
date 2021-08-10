@@ -53,3 +53,66 @@
     background-repeat: no-repeat;
     background-position-x: right;
 }
+
+/*BREAKPOINTS 'MEDIA QUERIES*/
+
+@mixin body--desktop(){
+    h1::before {
+        left: 10px;
+    }
+    
+    h1::after {
+        right: 10px;
+    }
+    h2::before {
+        left: 10px;
+    }
+    
+    h2::after {
+        right: 10px;
+    }
+    nav {
+        a {
+            padding: 0 1rem;
+        }
+    }
+    h3 {
+        letter-spacing: 1px;
+    }
+}
+
+@mixin body--tablet(){
+    h1::before {
+        left: 10px;
+        width: 50px;
+    }
+    
+    h1::after {
+        left: 710px;
+        width: 50px;
+    }
+    h2::before {
+        left: 10px;
+    }
+    
+    h2::after {
+        right: 10px;
+    }
+    nav {
+        a {
+            padding: 0 0.5rem;
+        }
+    }
+    .footer-dark .copyright {
+        padding-top: 15px;
+    }
+}
+
+@mixin body--mobile(){
+    ul.navMenu {
+        width: 480px;
+    }
+    .animationTitles {
+        
+    }
+}
