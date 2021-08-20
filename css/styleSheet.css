@@ -407,13 +407,11 @@ nav li:hover > ul > li {
 
 /*HTML 'NUESTROS PRODUCTOS'*/
 .carousel-control-prev-icon {
-  background-image: url(/images/imagenes_carousel/icon-left.png) !important;
   position: relative;
   right: 50px;
 }
 
 .carousel-control-next-icon {
-  background-image: url(/images/imagenes_carousel/icon-right-min.png) !important;
   position: relative;
   left: 50px;
 }
