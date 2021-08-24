@@ -8,11 +8,11 @@
   font-size: 20px;
 }
 
+/*MEDIA QUERIES -BREAKPOINTS-*/
 /*REFERENCIA GOOGLE MAPS*/
 /*H1 Y H2*/
 /*IMAGENES 'QUIENES SOMOS'*/
 /*IMAGENES EN 'SECTION' DENTRO DE LOS DISTINTOS HTML*/
-/*BREAKPOINTS 'MEDIA QUERIES*/
 /*IMAGENES 'MEDIOS DE PAGO'*/
 .cashImages {
   border-radius: 15%;
@@ -621,6 +621,10 @@ body .goog-te-gadget-simple .goog-te-menu-value {
   margin: 0px 0px;
 }
 
+body .goog-te-gadget-simple .goog-te-menu-value span {
+  border-left: none !important;
+}
+
 /*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/
 .googleMapsStype {
   margin-top: 100px;
@@ -893,55 +897,4 @@ ul li {
   width: 300px;
   height: 300px;
   margin-left: 95rem;
-}
-
-/*BREAKPOINTS*/
-@media screen and (max-width: 1024px) {
-  h1::before {
-    left: 10px;
-  }
-  h1::after {
-    right: 10px;
-  }
-  h2::before {
-    left: 10px;
-  }
-  h2::after {
-    right: 10px;
-  }
-  nav a {
-    padding: 0 1rem;
-  }
-  h3 {
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1::before {
-    left: 10px;
-    width: 50px;
-  }
-  h1::after {
-    left: 710px;
-    width: 50px;
-  }
-  h2::before {
-    left: 10px;
-  }
-  h2::after {
-    right: 10px;
-  }
-  nav a {
-    padding: 0 0.5rem;
-  }
-  .footer-dark .copyright {
-    padding-top: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  ul.navMenu {
-    width: 480px;
-  }
 }

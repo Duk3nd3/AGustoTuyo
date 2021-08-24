@@ -616,6 +616,9 @@ body {
             padding: 0px 0px;
             margin: 0px 0px;
         }
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            border-left: none !important;
+        }
 }
 
 /*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/
@@ -765,6 +768,7 @@ ul {
         justify-content: space-evenly;
     }
 }
+
 /*FIN ETIQUETAS*/
 
 /*EDICION MODAL EN CALENDARIO*/
@@ -885,21 +889,4 @@ ul {
         height: 300px;    
         margin-left: 95rem;
     } 
-}
-
-/*BREAKPOINTS*/
-
-//desktop
-@media screen and (max-width: 1024px) {
-    @include body--desktop();
-}
-
-//tablet
-@media screen and (max-width: 768px) {
-    @include body--tablet();
-}
-
-//mobile
-@media screen and (max-width: 480px) {
-    @include body--mobile();
 }
