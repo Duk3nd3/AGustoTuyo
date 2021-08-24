@@ -125,30 +125,6 @@ nav {
     padding: 75px;
 }
 
-/*POP-UP ALERTA SITIO EN CONSTRUCCION*/
-#alert {
-    position: relative;
-    padding: 4rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-}
-
-/*IMAGEN A REEMPLAZAR POR RECETAS ORIGINALES. REFERENCIA: 'Nuestras recetas favoritas' EN INDEX*/
-#favRecipes {
-    border-radius: 15px;
-    height: 300px; width: 700px; 
-    margin: 15px;
-    padding: 15px;
-}
-
-/*BUSCADOR DE LA PAGINA -NO FUNCIONA AUN-*/
-#search {    
-    background-color: lightseagreen;
-    background-size: 24px;
-    width: 500px;    
-}
-
 /*PIE DE PAGINA -FOOTER-*/
 .footer-dark {
     height: 450px;
@@ -611,6 +587,31 @@ input:focus {
 
 .classMediaImage {
     @extend %social-media-image;
+}
+
+/*API GOOGLE TRANSLATE*/
+
+body {
+    top: 0 !important;
+        .goog-te-banner-frame {
+            display: none;
+        }
+        .goog-te-gadget-icon{
+            display:none;
+        }
+        .goog-te-menu-value img{
+            display: none;
+        }
+        .goog-te-gadget-simple{
+            background-color: #14636300;
+            border: none;         
+            font-size: 15px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        .goog-te-gadget-simple .goog-te-menu-value{
+            color: #ffffff;
+        }
 }
 
 /*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/
