@@ -656,6 +656,10 @@ input:focus {
 }
 
 /*INICIO ETIQUETAS EN LOS HTML*/
+body {
+  top: 0 !important;
+}
+
 h1 {
   position: relative;
   text-align: center;
