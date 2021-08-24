@@ -615,6 +615,10 @@ body .goog-te-gadget-simple {
 
 body .goog-te-gadget-simple .goog-te-menu-value {
   color: #ffffff;
+  width: 120px;
+  height: auto;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
 
 /*MAPA EN HTML -CONTACTO Y A GUSTO TUYO HISTORIA-*/

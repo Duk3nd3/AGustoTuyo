@@ -14,7 +14,7 @@ Array.prototype.slice.call(forms)
             event.stopPropagation()
         }
         else {
-            alert('Information successfully validated. The email has been sent. Thank you!')
+            alert('La informacion ha sido enviada con exito. ¡Muchas gracias!')
         }
         form.classList.add('was-validated')
         }, false)
