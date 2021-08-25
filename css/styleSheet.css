@@ -83,6 +83,10 @@ nav a {
 }
 
 nav a:hover {
+  color: #ffd000;
+}
+
+nav a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -619,6 +623,10 @@ body .goog-te-gadget-simple .goog-te-menu-value {
   height: auto;
   padding: 0px 0px;
   margin: 0px 0px;
+}
+
+body .goog-te-gadget-simple .goog-te-menu-value:hover {
+  color: #ffd000;
 }
 
 body .goog-te-gadget-simple .goog-te-menu-value span {

@@ -38,6 +38,9 @@ nav {
         padding: 0 2.5em;
         text-decoration: none;
         transition: .4s;
+        &:hover {
+            color: rgb(255, 208, 0);
+        }
     }
 }
 
@@ -615,6 +618,9 @@ body {
             height: auto;
             padding: 0px 0px;
             margin: 0px 0px;
+            &:hover {
+                color: rgb(255, 208, 0);
+            }
         }
         .goog-te-gadget-simple .goog-te-menu-value span {
             border-left: none !important;
