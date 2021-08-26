@@ -9,6 +9,92 @@
 }
 
 /*MEDIA QUERIES -BREAKPOINTS-*/
+@media screen and (min-width: 480px) {
+  body {
+    background-color: cyan !important;
+  }
+  body #google_translate_element {
+    display: none;
+  }
+  body ::before, body ::after {
+    display: none;
+  }
+  body #imgSection1, body #imgSection2, body #imgSection3 {
+    background-position: top;
+    background-position-y: 50px;
+  }
+  body .classCalendar {
+    width: 400px;
+  }
+  body nav a {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+  }
+  body .footer-dark {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: cyan !important;
+  }
+  body #google_translate_element {
+    display: none;
+  }
+  body ::before, body ::after {
+    display: none;
+  }
+  body #imgSection1, body #imgSection2, body #imgSection3 {
+    background-position: top;
+    background-position-y: 50px;
+  }
+  body .classCalendar {
+    width: 400px;
+  }
+  body nav a {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+  }
+  body .footer-dark {
+    height: auto;
+  }
+  body h1 {
+    font-size: 25px;
+    margin-right: 20%;
+  }
+  body #flexLogoCompany {
+    margin-left: 25px;
+  }
+  body .row {
+    justify-content: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: cyan !important;
+  }
+  body #google_translate_element {
+    display: none;
+  }
+  body ::before, body ::after {
+    display: none;
+  }
+  body #imgSection1, body #imgSection2, body #imgSection3 {
+    background-position-x: right;
+  }
+  body nav a {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .footer-dark {
+    height: auto;
+  }
+}
+
 /*REFERENCIA GOOGLE MAPS*/
 /*H1 Y H2*/
 /*IMAGENES 'QUIENES SOMOS'*/

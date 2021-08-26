@@ -24,3 +24,106 @@ $fs-test: (
 
 /*MEDIA QUERIES -BREAKPOINTS-*/
 
+$breakpoints: (
+    sm : 480px,
+    md : 768px,
+    lg : 1200px
+);
+
+@mixin mob-first($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "El valor '#{ $breakpoint }' no ha sido declarado como breakpoint";
+    }
+
+    
+}
+
+body {
+
+    @include mob-first(sm){
+        background-color: cyan !important;
+        #google_translate_element {
+            display: none;
+        }
+        ::before, ::after {
+            display: none;
+        }
+        #imgSection1, #imgSection2, #imgSection3 {
+            background-position: top;
+            background-position-y: 50px;
+        }
+        .classCalendar {
+            width: 400px;
+        }
+        nav a {
+            display: flex;
+            width: 600px;
+            justify-content: center;
+        }
+        .footer-dark {
+            height: auto;
+        }
+    }
+
+    @include mob-first(md){
+        background-color: cyan !important;
+        #google_translate_element {
+            display: none;
+        }
+        ::before, ::after {
+            display: none;
+        }
+        #imgSection1, #imgSection2, #imgSection3 {
+            background-position: top;
+            background-position-y: 50px;
+            
+        }
+        .classCalendar {
+            width: 400px;
+        }
+        nav a {
+            display: flex;
+            width: 600px;
+            justify-content: center;
+            
+        }
+        .footer-dark {
+            height: auto;
+        }
+        h1 {
+            font-size: 25px;
+            margin-right: 20%;
+        }
+        #flexLogoCompany {
+            margin-left: 25px;
+        }
+        .row {
+            justify-content: baseline;
+        }
+    }
+
+    @include mob-first(lg){
+        background-color: cyan !important;
+        #google_translate_element {
+            display: none;
+        }
+        ::before, ::after {
+            display: none;
+        }
+        #imgSection1, #imgSection2, #imgSection3 {
+            background-position-x: right;
+        }
+        nav a {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .footer-dark {
+            height: auto;
+        }
+    }
+}
