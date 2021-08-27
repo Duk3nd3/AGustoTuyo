@@ -22,108 +22,149 @@ $fs-test: (
     }
 }
 
-/*MEDIA QUERIES -BREAKPOINTS-*/
+/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO*/
 
 $breakpoints: (
-    sm : 480px,
-    md : 768px,
-    lg : 1200px
+    sm: 480px,
+    md: 768px,
+    lg: 1024px
 );
 
-@mixin mob-first($breakpoint) {
+@mixin mobile-first($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
-        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
             @content;
         }
     } @else {
         @warn "El valor '#{ $breakpoint }' no ha sido declarado como breakpoint";
     }
-
-    
 }
 
 body {
-
-    @include mob-first(sm){
-        background-color: cyan !important;
-        #google_translate_element {
+    @include mobile-first(sm) {
+        .goog-te-gadget-simple {
             display: none;
         }
-        ::before, ::after {
-            display: none;
+        h1::before, h1::after {
+            display: none;            
         }
-        #imgSection1, #imgSection2, #imgSection3 {
-            background-position: top;
-            background-position-y: 50px;
+        h2::before, h2::after {
+            display: none;            
+        }
+        .footer-dark {
+            width: 100%;
+            height: auto;
+            padding-top: 0%;
+            .row img {
+                margin-top: 10%;
+            }
+        }
+        #imgSection3 {
+            background-position-x: center;
+            background-position-y: 25%;
+        }
+        #imgSection2 {
+            background-position-x: center;
+            background-position-y: 10%;
+        }
+        #imgSection1 {
+            background-position-x: center;
+            background-position-y: 30%;
         }
         .classCalendar {
-            width: 400px;
+            width: 100%;
         }
-        nav a {
-            display: flex;
-            width: 600px;
-            justify-content: center;
-        }
-        .footer-dark {
-            height: auto;
+        #logoCompany {
+            margin-right: 15%;
         }
     }
+}
 
-    @include mob-first(md){
-        background-color: cyan !important;
-        #google_translate_element {
+body {
+    @include mobile-first(md) {
+        .goog-te-gadget-simple {
             display: none;
         }
-        ::before, ::after {
-            display: none;
+        h1::before, h1::after {
+            display: none;            
         }
-        #imgSection1, #imgSection2, #imgSection3 {
-            background-position: top;
-            background-position-y: 50px;
-            
+        h2::before, h2::after {
+            display: none;            
+        }
+        .footer-dark {
+            width: 100%;
+            height: auto;
+            padding-top: 0%;
+            .row img {
+                margin-top: 10%;
+            }
+        }
+        #imgSection3 {
+            background-position-x: center;
+            background-position-y: 20%;
+            background-size: 15%;
+        }
+        #imgSection2 {
+            background-position-x: center;
+            background-position-y: 10%;
+            background-size: 10%;
+        }
+        #imgSection1 {
+            background-position-x: center;
+            background-position-y: 28%;
+            background-size: 9%;
         }
         .classCalendar {
-            width: 400px;
+            width: 100%;
         }
-        nav a {
-            display: flex;
-            width: 600px;
-            justify-content: center;
-            
-        }
-        .footer-dark {
-            height: auto;
-        }
-        h1 {
-            font-size: 25px;
-            margin-right: 20%;
-        }
-        #flexLogoCompany {
-            margin-left: 25px;
-        }
-        .row {
-            justify-content: baseline;
+        #logoCompany {
+            margin-right: 15%;
         }
     }
+}
 
-    @include mob-first(lg){
-        background-color: cyan !important;
-        #google_translate_element {
+body {
+    @include mobile-first(lg) {
+        .goog-te-gadget-simple {
             display: none;
         }
-        ::before, ::after {
-            display: none;
+        h1::before, h1::after {
+            display: none;            
         }
-        #imgSection1, #imgSection2, #imgSection3 {
-            background-position-x: right;
-        }
-        nav a {
-            display: flex;
-            justify-content: space-evenly;
-            
+        h2::before, h2::after {
+            display: none;            
         }
         .footer-dark {
+            width: 100%;
             height: auto;
+            padding-top: 0%;
+            .row img {
+                margin-top: 10%;
+            }
         }
+        .classCalendar {
+            width: 100%;
+        }
+        .col-md-3 {
+            width: 50%;
+        }
+        #imgSection3 {
+            background-position-x: center;
+            background-position-y: 20%;
+            background-size: 8%;
+        }
+        #imgSection2 {
+            background-position-x: center;
+            background-position-y: 10%;
+            background-size: 5%;
+        }
+        #imgSection1 {
+            background-position-x: center;
+            background-position-y: 28%;
+            background-size: 5%;
+        }
+        #logoCompany {
+            margin-right: 15%;
+        }        
     }
 }

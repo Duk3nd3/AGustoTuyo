@@ -8,90 +8,127 @@
   font-size: 20px;
 }
 
-/*MEDIA QUERIES -BREAKPOINTS-*/
-@media screen and (min-width: 480px) {
-  body {
-    background-color: cyan !important;
-  }
-  body #google_translate_element {
+/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO*/
+@media screen and (max-width: 480px) {
+  body .goog-te-gadget-simple {
     display: none;
   }
-  body ::before, body ::after {
+  body h1::before, body h1::after {
     display: none;
   }
-  body #imgSection1, body #imgSection2, body #imgSection3 {
-    background-position: top;
-    background-position-y: 50px;
-  }
-  body .classCalendar {
-    width: 400px;
-  }
-  body nav a {
-    display: flex;
-    width: 600px;
-    justify-content: center;
+  body h2::before, body h2::after {
+    display: none;
   }
   body .footer-dark {
+    width: 100%;
     height: auto;
+    padding-top: 0%;
+  }
+  body .footer-dark .row img {
+    margin-top: 10%;
+  }
+  body #imgSection3 {
+    background-position-x: center;
+    background-position-y: 25%;
+  }
+  body #imgSection2 {
+    background-position-x: center;
+    background-position-y: 10%;
+  }
+  body #imgSection1 {
+    background-position-x: center;
+    background-position-y: 30%;
+  }
+  body .classCalendar {
+    width: 100%;
+  }
+  body #logoCompany {
+    margin-right: 15%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    background-color: cyan !important;
-  }
-  body #google_translate_element {
+@media screen and (max-width: 768px) {
+  body .goog-te-gadget-simple {
     display: none;
   }
-  body ::before, body ::after {
+  body h1::before, body h1::after {
     display: none;
   }
-  body #imgSection1, body #imgSection2, body #imgSection3 {
-    background-position: top;
-    background-position-y: 50px;
-  }
-  body .classCalendar {
-    width: 400px;
-  }
-  body nav a {
-    display: flex;
-    width: 600px;
-    justify-content: center;
+  body h2::before, body h2::after {
+    display: none;
   }
   body .footer-dark {
+    width: 100%;
     height: auto;
+    padding-top: 0%;
   }
-  body h1 {
-    font-size: 25px;
-    margin-right: 20%;
+  body .footer-dark .row img {
+    margin-top: 10%;
   }
-  body #flexLogoCompany {
-    margin-left: 25px;
+  body #imgSection3 {
+    background-position-x: center;
+    background-position-y: 20%;
+    background-size: 15%;
   }
-  body .row {
-    justify-content: baseline;
+  body #imgSection2 {
+    background-position-x: center;
+    background-position-y: 10%;
+    background-size: 10%;
+  }
+  body #imgSection1 {
+    background-position-x: center;
+    background-position-y: 28%;
+    background-size: 9%;
+  }
+  body .classCalendar {
+    width: 100%;
+  }
+  body #logoCompany {
+    margin-right: 15%;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: cyan !important;
-  }
-  body #google_translate_element {
+@media screen and (max-width: 1024px) {
+  body .goog-te-gadget-simple {
     display: none;
   }
-  body ::before, body ::after {
+  body h1::before, body h1::after {
     display: none;
   }
-  body #imgSection1, body #imgSection2, body #imgSection3 {
-    background-position-x: right;
-  }
-  body nav a {
-    display: flex;
-    justify-content: space-evenly;
+  body h2::before, body h2::after {
+    display: none;
   }
   body .footer-dark {
+    width: 100%;
     height: auto;
+    padding-top: 0%;
+  }
+  body .footer-dark .row img {
+    margin-top: 10%;
+  }
+  body .classCalendar {
+    width: 100%;
+  }
+  body .col-md-3 {
+    width: 50%;
+  }
+  body #imgSection3 {
+    background-position-x: center;
+    background-position-y: 20%;
+    background-size: 8%;
+  }
+  body #imgSection2 {
+    background-position-x: center;
+    background-position-y: 10%;
+    background-size: 5%;
+  }
+  body #imgSection1 {
+    background-position-x: center;
+    background-position-y: 28%;
+    background-size: 5%;
+  }
+  body #logoCompany {
+    margin-right: 15%;
   }
 }
 
