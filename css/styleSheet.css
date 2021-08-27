@@ -8,7 +8,8 @@
   font-size: 20px;
 }
 
-/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO*/
+/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO /Movil hasta 425px/
+@media screen and (min-width: 321px) and (max-width: 425px) {*/
 @media screen and (max-width: 480px) {
   body .goog-te-gadget-simple {
     display: none;
@@ -47,91 +48,94 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  body .goog-te-gadget-simple {
-    display: none;
-  }
-  body h1::before, body h1::after {
-    display: none;
-  }
-  body h2::before, body h2::after {
-    display: none;
-  }
-  body .footer-dark {
-    width: 100%;
-    height: auto;
-    padding-top: 0%;
-  }
-  body .footer-dark .row img {
-    margin-top: 10%;
-  }
-  body #imgSection3 {
-    background-position-x: center;
-    background-position-y: 20%;
-    background-size: 15%;
-  }
-  body #imgSection2 {
-    background-position-x: center;
-    background-position-y: 10%;
-    background-size: 10%;
-  }
-  body #imgSection1 {
-    background-position-x: center;
-    background-position-y: 28%;
-    background-size: 9%;
-  }
-  body .classCalendar {
-    width: 100%;
-  }
-  body #logoCompany {
-    margin-right: 15%;
-  }
+/* body {
+    @include mobile-first(md) {
+        .goog-te-gadget-simple {
+            display: none;
+        }
+        h1::before, h1::after {
+            display: none;            
+        }
+        h2::before, h2::after {
+            display: none;            
+        }
+        .footer-dark {
+            width: 100%;
+            height: auto;
+            padding-top: 0%;
+            .row img {
+                margin-top: 10%;
+            }
+        }
+        #imgSection3 {
+            background-position-x: center;
+            background-position-y: 20%;
+            background-size: 15%;
+        }
+        #imgSection2 {
+            background-position-x: center;
+            background-position-y: 10%;
+            background-size: 10%;
+        }
+        #imgSection1 {
+            background-position-x: center;
+            background-position-y: 28%;
+            background-size: 9%;
+        }
+        .classCalendar {
+            width: 100%;
+        }
+        #logoCompany {
+            margin-right: 15%;
+        }
+    }
 }
 
-@media screen and (max-width: 1024px) {
-  body .goog-te-gadget-simple {
-    display: none;
-  }
-  body h1::before, body h1::after {
-    display: none;
-  }
-  body h2::before, body h2::after {
-    display: none;
-  }
-  body .footer-dark {
-    width: 100%;
-    height: auto;
-    padding-top: 0%;
-  }
-  body .footer-dark .row img {
-    margin-top: 10%;
-  }
-  body .classCalendar {
-    width: 100%;
-  }
-  body .col-md-3 {
-    width: 50%;
-  }
-  body #imgSection3 {
-    background-position-x: center;
-    background-position-y: 20%;
-    background-size: 8%;
-  }
-  body #imgSection2 {
-    background-position-x: center;
-    background-position-y: 10%;
-    background-size: 5%;
-  }
-  body #imgSection1 {
-    background-position-x: center;
-    background-position-y: 28%;
-    background-size: 5%;
-  }
-  body #logoCompany {
-    margin-right: 15%;
-  }
-}
-
+body {
+    @include mobile-first(lg) {
+        .goog-te-gadget-simple {
+            display: none;
+        }
+        h1::before, h1::after {
+            display: none;            
+        }
+        h2::before, h2::after {
+            display: none;            
+        }
+        .footer-dark {
+            width: 100%;
+            height: auto;
+            padding-top: 0%;
+            .row img {
+                margin-top: 10%;
+            }
+        }
+        .classCalendar {
+            width: 100%;
+        }
+        .col-md-3 {
+            width: 50%;
+        }
+        #imgSection3 {
+            background-position-x: center;
+            background-position-y: 20%;
+            background-size: 8%;
+        }
+        #imgSection2 {
+            background-position-x: center;
+            background-position-y: 10%;
+            background-size: 5%;
+        }
+        #imgSection1 {
+            background-position-x: center;
+            background-position-y: 28%;
+            background-size: 5%;
+        }
+        #logoCompany {
+            margin-right: 15%;
+        }        
+    }
+} */
 /*REFERENCIA GOOGLE MAPS*/
 /*H1 Y H2*/
 /*IMAGENES 'QUIENES SOMOS'*/

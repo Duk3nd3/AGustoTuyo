@@ -22,7 +22,8 @@ $fs-test: (
     }
 }
 
-/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO*/
+/*SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO /Movil hasta 425px/
+@media screen and (min-width: 321px) and (max-width: 425px) {*/
 
 $breakpoints: (
     sm: 480px,
@@ -80,7 +81,7 @@ body {
     }
 }
 
-body {
+/* body {
     @include mobile-first(md) {
         .goog-te-gadget-simple {
             display: none;
@@ -167,4 +168,4 @@ body {
             margin-right: 15%;
         }        
     }
-}
+} */
