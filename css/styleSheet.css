@@ -51,6 +51,24 @@
   padding: 75px;
 }
 
+/*
+SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
+320px — 480px: Mobile
+481px — 768px: Tablets / Ipdas
+769px — 1024px: Laptops pantalla pequeñas.
+1025px — 1200px: Escritorio, pantallas grandes.
+1201px and more — Super pantallas, tv
+*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .goog-te-menu-value {
+    display: none;
+  }
+  .navMenu li {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*Seleccion universal con asterisco*/
 * {
   margin: 0px;
