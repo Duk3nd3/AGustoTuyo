@@ -11,8 +11,16 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
     .goog-te-menu-value {
         display: none;
     }
-    .navMenu li {        
-        width: 100%;
-        height: auto;
+    h1:before {
+        display: none;
+        &:after {
+            display: none;
+        }
+    }
+    h2:before {
+        display: none;
+        &:after {
+            display: none;
+        }
     }
 };
