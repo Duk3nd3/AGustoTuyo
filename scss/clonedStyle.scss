@@ -266,13 +266,13 @@ nav {
 
 #imgSection2 {
     background-image: url(../images/imagen_secciones/social-media-web-design-min.png);
-    @include img-sections (15%, 30px);
+    @include img-sections (12%, 25px);
 }
 
 /*SECTION 3 HTML 'NUESTROS PRODUCTOS' CON INDEX*/
 #imgSection3 {
     background-image: url(../images/imagen_secciones/imagen_condimentos-min.png);
-    @include img-sections (20%, 15px);
+    @include img-sections (15%, 30px);
 }
 
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
