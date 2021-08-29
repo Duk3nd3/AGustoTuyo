@@ -120,8 +120,8 @@ nav a:hover {
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
   display: table;
   width: 100%;
-  height: 100%;
-  padding-top: 1%;
+  height: 200px;
+  padding-top: 3%;
   padding-bottom: 1%;
 }
 
@@ -184,6 +184,8 @@ nav li:hover > ul > li {
 /*PIE DE PAGINA -FOOTER-*/
 .footer-dark {
   width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: #000000;
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
 }
@@ -338,7 +340,7 @@ nav li:hover > ul > li {
 /*SECTION 8 CORRESPONDE HTML 'MEDIOS DE PAGO'*/
 #imgSection8 {
   background-image: url(../images/imagen_secciones/medios_de_pago-min.png);
-  background-size: 25%;
+  background-size: 15%;
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
