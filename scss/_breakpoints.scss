@@ -11,16 +11,29 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
     .goog-te-menu-value {
         display: none;
     }
-    h1:before {
+    h1:before, h1:after {
         display: none;
-        &:after {
-            display: none;
-        }
     }
-    h2:before {
+    h2:before, h2:after {
         display: none;
-        &:after {
-            display: none;
-        }
+    }
+    .classCalendar {
+        width: 100% !important;
+    }
+    .d-flex {
+        display: block !important;
+        margin-left: 50%;
+    }
+    #imgSection1 {
+        background-image: none !important;
+    }
+    #imgSection2 {
+        background-image: none !important;
+    }
+    #imgSection3 {
+        background-image: none !important;
+    }
+    #logoCompany {
+        display: none;
     }
 };
