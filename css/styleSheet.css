@@ -235,8 +235,9 @@ header nav ul div {
 
 .navMenu {
   width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
-  margin-bottom: 0;
   justify-content: space-around;
   align-items: center;
 }
@@ -305,9 +306,9 @@ nav li:hover > ul > li {
 
 /*PIE DE PAGINA -FOOTER-*/
 .footer-dark {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   color: #000000;
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
 }
