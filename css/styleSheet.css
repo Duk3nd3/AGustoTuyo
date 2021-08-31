@@ -59,34 +59,134 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
 1025px — 1200px: Escritorio, pantallas grandes.
 1201px and more — Super pantallas, tv
 */
+@media screen and (max-width: 1580px) {
+  nav ul li a {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav input {
+    display: none;
+  }
+  nav > span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  header nav input {
+    display: block;
+    opacity: 0;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 2;
+    /* and place it over the hamburger */
+  }
+  header nav input:checked ~ .navMenu {
+    display: flex;
+  }
+  header nav input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  header nav input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  header nav input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  header nav input:checked ~ ul {
+    transform: none;
+  }
+  header nav .hamb-line {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    margin-left: 20px;
+    background: #232323;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  header nav .hamb-line:first-child {
+    transform-origin: 0% 0%;
+  }
+  header nav .hamb-line:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  header nav .navMenu {
+    display: none;
+    flex-direction: column;
+  }
+  header nav .navMenu > li {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  header nav .navMenu > li a {
+    width: 100%;
+  }
+  header nav .navMenu > li ul {
+    position: unset;
+    width: auto;
+  }
+  header nav .navMenu > li ul li:hover ul {
+    display: none;
+  }
+  header nav .navMenu div {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .goog-te-menu-value {
     display: none;
   }
-  h1:before, h1:after {
+  h1:before {
     display: none;
   }
-  h2:before, h2:after {
+  h1:after {
     display: none;
+  }
+  h2:before {
+    display: none;
+  }
+  h2:after {
+    display: none;
+  }
+  #flexLogoCompany {
+    display: block !important;
+    justify-content: center !important;
+    margin-right: 100% !important;
+    margin: 0px !important;
+  }
+  #imgSection1, #imgSection2, #imgSection3 {
+    background-image: none !important;
+  }
+  .transformLogosSocialMedia {
+    width: 50%;
+  }
+  .d-flex {
+    display: block !important;
   }
   .classCalendar {
     width: 100% !important;
   }
-  .d-flex {
-    display: block !important;
-    margin-left: 50%;
+  .classCalendarMonthTitle {
+    font-size: 100% !important;
   }
-  #imgSection1 {
-    background-image: none !important;
-  }
-  #imgSection2 {
-    background-image: none !important;
-  }
-  #imgSection3 {
-    background-image: none !important;
-  }
-  #logoCompany {
-    display: none;
+  .transformProductsImg {
+    width: 75% !important;
+    height: auto;
   }
 }
 
@@ -98,61 +198,69 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
 }
 
 /*INICIO MENU DE NAVEGACION -ESTILOS GENERALES- */
-nav ul {
+header {
+  background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
+  padding: 2rem;
+}
+
+header nav ul {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav li {
-  line-height: 3rem;
+header nav ul li {
+  line-height: 2rem;
   position: relative;
 }
 
-.navMenu ul {
-  position: absolute;
-}
-
-nav a {
+header nav ul li a {
   color: #eeeeee;
   display: block;
-  padding: 0 2.5em;
+  padding: 0 1.5em;
   text-decoration: none;
   transition: .4s;
 }
 
-nav a:hover {
+header nav ul li a:hover {
   color: #ffd000;
-}
-
-nav a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/*PRIMER NIVEL MENU DESPLEGABLE*/
-.navMenu {
-  background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
-  display: table;
-  width: 100%;
-  height: 200px;
-  padding-top: 3%;
-  padding-bottom: 1%;
+header nav ul div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 .5rem;
 }
 
-.navMenu > li {
-  float: left;
+.navMenu {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navMenu:ul {
   position: absolute;
 }
 
+.navMenu ul {
+  z-index: 10;
+  position: absolute;
+}
+
+.navMenu ul li a {
+  width: 100%;
+}
+
+/*PRIMER NIVEL MENU DESPLEGABLE*/
 /*SEGUNDO NIVEL MENU DESPLEGABLE*/
 nav li li {
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
   max-height: 0;
   overflow: hidden;
   transition: all .5s;
-  width: 200px;
 }
 
 nav li:hover > ul > li {
@@ -162,6 +270,7 @@ nav li:hover > ul > li {
 
 .navMenu > li > ul {
   top: 100%;
+  width: 100%;
 }
 
 /*TERCER NIVEL MENU DESPLEGABLE*/
@@ -635,10 +744,6 @@ input:focus {
 }
 
 /*API GOOGLE TRANSLATE*/
-body {
-  top: 0 !important;
-}
-
 body .goog-te-banner-frame {
   display: none;
 }
@@ -655,16 +760,11 @@ body .goog-te-gadget-simple {
   background-color: #14636300;
   border: none;
   font-size: 15px;
-  padding-bottom: 0px;
-  padding-top: 0px;
 }
 
 body .goog-te-gadget-simple .goog-te-menu-value {
   color: #ffffff;
-  width: 120px;
   height: auto;
-  padding: 0px 0px;
-  margin: 0px 0px;
 }
 
 body .goog-te-gadget-simple .goog-te-menu-value:hover {

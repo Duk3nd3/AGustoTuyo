@@ -7,33 +7,148 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
 1201px and more — Super pantallas, tv
 */
 
+@media screen and (max-width: 1580px) {
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav {
+        input {
+            display: none;
+        }
+        & > span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        nav {
+            input {
+                display: block;
+                opacity: 0;
+                width: 40px;
+                height: 32px;
+                position: absolute;
+                top: 25px;
+                left: 40px;            
+                cursor: pointer;
+                z-index: 2; /* and place it over the hamburger */    
+                &:checked ~ .navMenu {
+                    display: flex;
+                }
+                &:checked ~ span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(-2px, -1px);
+                    background: #232323;
+                }
+                &:checked ~ span:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+                &:checked ~ span:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(0, -1px);
+                }
+                &:checked ~ ul {
+                    transform: none;
+                }
+                }
+                .hamb-line {
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                margin-left: 20px;
+                background: #232323;
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 4px 0px;                
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            opacity 0.55s ease;    
+                    &:first-child {
+                        transform-origin: 0% 0%;
+                    }
+                    &:nth-last-child(2) {
+                        transform-origin: 0% 100%;
+                    }
+                }
+            .navMenu  {
+                display: none;
+                flex-direction: column;
+                & > li {
+                    width: 100%;
+                    justify-content: flex-start;
+                    a{
+                        width: 100%;
+                    }
+                    ul {
+                        position: unset;
+                        width: auto;
+                        li:hover {
+                            ul {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                div {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .goog-te-menu-value {
         display: none;
     }
-    h1:before, h1:after {
+    h1:before {
         display: none;
     }
-    h2:before, h2:after {
+    h1:after {
         display: none;
+    }
+    h2:before {
+        display: none;
+    }
+    h2:after {
+        display: none;
+    }
+    #flexLogoCompany {
+        display: block !important;
+        justify-content: center !important;
+        margin-right: 100% !important;
+        margin: 0px !important;
+    }
+    #imgSection1, #imgSection2, #imgSection3 {
+        background-image: none !important;
+    }
+    .transformLogosSocialMedia {
+        width: 50%;
+    }
+    .d-flex {
+        display: block !important;
     }
     .classCalendar {
         width: 100% !important;
     }
-    .d-flex {
-        display: block !important;
-        margin-left: 50%;
+    .classCalendarMonthTitle {
+        font-size: 100% !important;
     }
-    #imgSection1 {
-        background-image: none !important;
-    }
-    #imgSection2 {
-        background-image: none !important;
-    }
-    #imgSection3 {
-        background-image: none !important;
-    }
-    #logoCompany {
-        display: none;
+    .transformProductsImg {
+        width: 75% !important;
+        height: auto;
     }
 };
