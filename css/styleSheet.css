@@ -147,49 +147,56 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .goog-te-menu-value {
-    display: none;
-  }
-  h1:before {
-    display: none;
-  }
-  h1:after {
-    display: none;
-  }
-  h2:before {
-    display: none;
-  }
-  h2:after {
-    display: none;
-  }
-  #flexLogoCompany {
-    display: block !important;
-    justify-content: center !important;
-    margin-right: 100% !important;
-    margin: 0px !important;
-  }
-  #imgSection1, #imgSection2, #imgSection3 {
-    background-image: none !important;
-  }
-  .transformLogosSocialMedia {
-    width: 50%;
-  }
-  .d-flex {
-    display: block !important;
-  }
-  .classCalendar {
-    width: 100% !important;
-  }
-  .classCalendarMonthTitle {
-    font-size: 100% !important;
-  }
-  .transformProductsImg {
-    width: 75% !important;
-    height: auto;
+/*HTML ERROR 404*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
   }
 }
 
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+    .goog-te-menu-value {
+        display: none;
+    }
+    h1:before {
+        display: none;
+    }
+    h1:after {
+        display: none;
+    }
+    h2:before {
+        display: none;
+    }
+    h2:after {
+        display: none;
+    }
+    #flexLogoCompany {
+        display: block !important;
+        justify-content: center !important;
+        margin-right: 100% !important;
+        margin: 0px !important;
+    }
+    #imgSection1, #imgSection2, #imgSection3 {
+        background-image: none !important;
+    }
+    .transformLogosSocialMedia {
+        width: 50%;
+    }
+    .d-flex {
+        display: block !important;
+    }
+    .classCalendar {
+        width: 100% !important;
+    }
+    .classCalendarMonthTitle {
+        font-size: 100% !important;
+    }
+    .transformProductsImg {
+        width: 75% !important;
+        height: auto;
+    }
+}; */
 /*Seleccion universal con asterisco*/
 * {
   margin: 0px;
@@ -945,6 +952,7 @@ ul li {
 /*APLICACION DE BREADCRUMB*/
 .breadcrumb-item {
   margin-left: 3px;
+  margin-top: 20px;
 }
 
 .classColorHome {
