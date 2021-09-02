@@ -112,9 +112,28 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
 
 /*HTML ERROR 404*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    body {
+    .body-bg-404 {
+        height: 500px;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .bg-404-text {          
+        
+    }
+    .bg-404-error > img {
+        align-content: flex-end;
+    }
+    .bg-404 {
+        
+    }
+    .btn .btn-secondary .bg-404-button {
+        
+    }
+    .bg-404-icon {
+        
     }
 }
 
