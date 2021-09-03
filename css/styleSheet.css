@@ -162,12 +162,16 @@
     background-image: none !important;
   }
   #logoCompany {
-    width: 250px;
     max-width: 100%;
+    height: auto;
   }
   .classCalendar {
     width: 500px;
     max-width: 100%;
+  }
+  .referenciaCalendario {
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -273,7 +277,6 @@ nav li:hover > ul > li {
 /*LOGO EMPRESA*/
 #logoCompany {
   border-radius: 15px;
-  height: 250px;
   width: 250px;
   text-align: center;
 }
