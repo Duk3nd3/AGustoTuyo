@@ -1,12 +1,3 @@
-/*
-SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
-320px — 480px: Mobile
-481px — 768px: Tablets / Ipdas
-769px — 1024px: Laptops pantalla pequeñas.
-1025px — 1200px: Escritorio, pantallas grandes.
-1201px and more — Super pantallas, tv
-*/
-
 @media screen and (max-width: 1580px) {
     nav {
         ul {
@@ -16,6 +7,12 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
                 }
             }
         }
+    }
+    h1::before, h1::after  {
+        display: none;
+    }
+    h2::before, h2::after {
+        display: none;
     }
 }
 
@@ -110,72 +107,28 @@ SE APLICA RESPONSIVE WEB DESIGN AL PROYECTO
     }
 }
 
-/*HTML ERROR 404*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .body-bg-404 {
-        height: 500px;
-        display: flex;
-        flex-direction: row;
+@media screen and (max-width: 480px) {
+    .imageCorp {
+        display: flex !important;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: flex-start;
+        column-gap: 5%;
     }
-    .bg-404-text {          
-        
+    .googleMapsStype {
+        display: flex;
+        justify-content: center;
     }
-    .bg-404-error > img {
-        align-content: flex-end;
+    .videoStyle video {
+        width:100%;
     }
-    .bg-404 {
-        
-    }
-    .btn .btn-secondary .bg-404-button {
-        
-    }
-    .bg-404-icon {
-        
-    }
-}
-
-/* @media screen and (min-width: 320px) and (max-width: 480px) {
-    .goog-te-menu-value {
-        display: none;
-    }
-    h1:before {
-        display: none;
-    }
-    h1:after {
-        display: none;
-    }
-    h2:before {
-        display: none;
-    }
-    h2:after {
-        display: none;
-    }
-    #flexLogoCompany {
-        display: block !important;
-        justify-content: center !important;
-        margin-right: 100% !important;
-        margin: 0px !important;
-    }
-    #imgSection1, #imgSection2, #imgSection3 {
+    #imgSection1, #imgSection2, #imgSection3, #imgSection6, #imgSection8 {
         background-image: none !important;
     }
-    .transformLogosSocialMedia {
-        width: 50%;
-    }
-    .d-flex {
-        display: block !important;
+    #logoCompany {
+        width: 250px;
+        max-width: 100%;
     }
     .classCalendar {
-        width: 100% !important;
+        width: 500px;
+        max-width: 100%;
     }
-    .classCalendarMonthTitle {
-        font-size: 100% !important;
-    }
-    .transformProductsImg {
-        width: 75% !important;
-        height: auto;
-    }
-}; */
+}
