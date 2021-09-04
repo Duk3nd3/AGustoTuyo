@@ -228,6 +228,14 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  .body-bg-404 .bg-404-text > p {
+    width: 250px;
+    font-size: 70%;
+  }
+  .bg-404 {
+    height: 50% !important;
+    margin-top: 5%;
+  }
 }
 
 /*Seleccion universal con asterisco*/
