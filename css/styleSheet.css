@@ -146,6 +146,18 @@
 }
 
 @media screen and (max-width: 480px) {
+  h3 {
+    display: none;
+  }
+  header {
+    width: 400px;
+  }
+  header nav .navMenu div {
+    display: none;
+  }
+  h1, h2 {
+    margin-left: 20%;
+  }
   .imageCorp {
     display: flex !important;
     flex-wrap: wrap;
@@ -163,7 +175,9 @@
   }
   #logoCompany {
     max-width: 100%;
-    height: auto;
+  }
+  #flexLogoCompany {
+    margin: 0px !important;
   }
   .classCalendar {
     width: 500px;
@@ -172,6 +186,22 @@
   .referenciaCalendario {
     margin: 0px;
     padding: 0px;
+  }
+  .footer-dark {
+    width: 400px !important;
+  }
+  .classImagesSalmueras, .classImagnesAderezos, .classImageEscabeche {
+    display: block;
+    margin: 5%;
+  }
+  .paymentStyles__center {
+    display: none;
+  }
+  .classCards {
+    justify-content: center !important;
+  }
+  .paragraphClass {
+    display: none !important;
   }
 }
 
