@@ -245,6 +245,21 @@
   box-sizing: border-box;
 }
 
+/*BODY DARK MODE*/
+body.dark {
+  background: #000 !important;
+  transition: .3s ease all;
+  /*COLOR CONTENIDO CALENDARIO*/
+}
+
+body.dark h1, body.dark h2 {
+  color: peru;
+}
+
+body.dark .classOrderList > li {
+  color: ivory;
+}
+
 /*INICIO MENU DE NAVEGACION -ESTILOS GENERALES- */
 header {
   background: linear-gradient(90deg, #146363 0%, rgba(20, 99, 99, 0.742735) 47%, rgba(20, 99, 99, 0.55506) 100%);
@@ -588,9 +603,17 @@ nav li:hover > ul > li {
   right: 50px;
 }
 
+.carousel-control-prev-icon.dark {
+  background-image: url(../images/imagenes_carousel/chevron-circle-left-solid-black-mode.svg) !important;
+}
+
 .carousel-control-next-icon {
   position: relative;
   left: 50px;
+}
+
+.carousel-control-next-icon.dark {
+  background-image: url(../images/imagenes_carousel/chevron-circle-right-solid-black-mode.svg) !important;
 }
 
 /*FIN HTML 'NUESTROS PRODUCTOS*/
@@ -1097,4 +1120,49 @@ ul li {
   width: 300px;
   height: 300px;
   margin-left: 95rem;
+}
+
+/*SWITCH DARK MODE*/
+.switch {
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  background: none;
+  color: #fff;
 }
