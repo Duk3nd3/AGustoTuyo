@@ -163,7 +163,7 @@
         padding: 0px;
     }
     .footer-dark {
-        width: 400px !important;
+        width: 600px !important;
         max-width: 100%;
     }
     .classImagesSalmueras, .classImagnesAderezos, .classImageEscabeche {
@@ -197,5 +197,11 @@
     .bg-404 {
         height: 50% !important;
         margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:651px) {
+    #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection8 {
+        background-image: none !important;
     }
 }
