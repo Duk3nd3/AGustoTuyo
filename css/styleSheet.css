@@ -145,7 +145,13 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 480px) {
   h3 {
     display: none;
   }
@@ -238,7 +244,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 651px) {
+@media screen and (min-width: 1200px) and (min-width: 481px) and (max-width: 651px) {
   #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection8 {
     background-image: none !important;
   }
