@@ -1,3 +1,4 @@
+/*MEDIA QUERY MAX-WIDTH 1580px*/
 @media screen and (max-width: 1580px) {
     nav {
         ul {
@@ -16,6 +17,7 @@
     }
 }
 
+/*MEDIA QUERY MIN-WIDTH 1280px*/
 @media screen and (min-width: 1280px) {
     nav {
         input {
@@ -27,6 +29,7 @@
     }
 }
 
+/*MEDIA QUERY MAX-WIDTH 1280px*/
 @media screen and (max-width: 1280px) {
     header {
         nav {
@@ -107,12 +110,14 @@
     }
 }
 
+/*MEDIA QUERY MIN-WIDTH 1200px*/
 @media screen and (min-width: 1200px){
     h1, .h1 {
         font-size: 2.5rem !important;
     }
 }
 
+/*MEDIA QUERY MAX-WIDTH 480px*/
 @media screen and (max-width: 480px) {
     h3 {
         display: none;
@@ -178,11 +183,11 @@
         align-content: center;
         justify-content: center;
     }
-    .classImagnesAderezos {
-        display: block;
-        justify-content: center;
-        align-content: center;
-        padding: 0.5%;
+    .classImagesAderezos > .transformProductsImg {
+        width: 100px;
+        max-width: 100%;
+        display: flex;
+        padding-block: 1%;
     }
     .paymentStyles__center {
         display: none;
@@ -211,5 +216,30 @@
     .bg-404 {
         height: 50% !important;
         margin-top: 5%;
+    }
+}
+
+/*MEDIA QUERY MIN-WIDTH 425px AND MAX-WIDTH 479px*/
+@media screen and (min-width: 425px) and (max-width: 479px) {
+    .classFeaturedProducts {
+        display: flex !important;
+    }
+}
+
+/*MEDIA QUERY MIN-WIDTH: 320px AND MAX-WIDTH: 374px*/
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .classImagesSalmueras, .classImagesAderezos, .classImageEscabeche {
+        margin-top: 5%;
+        padding: 5%;
+    }
+    .classImagesAderezos > .transformProductsImg {
+        width: 75px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carousel.item > active {
+        padding-top: 0%;
+        margin-top: 0%;
     }
 }
