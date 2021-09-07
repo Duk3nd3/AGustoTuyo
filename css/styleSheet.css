@@ -189,7 +189,7 @@
     width: 400px;
     max-width: 100%;
   }
-  #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection8 {
+  #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8, #imgSection9 {
     background-image: none !important;
   }
   #logoCompany {
@@ -210,9 +210,18 @@
     width: 400px !important;
     max-width: 100%;
   }
-  .classImagesSalmueras, .classImagnesAderezos, .classImageEscabeche {
-    display: block;
+  .classImagesSalmueras, .classImageEscabeche {
+    display: flex;
     margin: 5%;
+    align-content: center;
+    justify-content: center;
+  }
+  .classImagnesAderezos {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
   }
   .paymentStyles__center {
     display: none;
