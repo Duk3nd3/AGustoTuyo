@@ -160,9 +160,6 @@
   h3 {
     display: none;
   }
-  header {
-    width: 400px;
-  }
   header nav .navMenu div {
     display: none;
   }
@@ -211,10 +208,6 @@
     margin: 0px;
     padding: 0px;
   }
-  .footer-dark {
-    width: 400px !important;
-    max-width: 100%;
-  }
   .classImagesSalmueras, .classImageEscabeche {
     display: flex;
     margin: 5%;
@@ -254,6 +247,14 @@
   .bg-404 {
     height: 50% !important;
     margin-top: 5%;
+  }
+  .classStyleReferences {
+    width: 400px;
+    max-width: 100%;
+  }
+  .breadcrumb {
+    width: 400px;
+    max-width: 100%;
   }
 }
 
