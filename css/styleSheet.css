@@ -482,6 +482,10 @@ nav li:hover > ul > li {
   margin-bottom: 0;
 }
 
+body.dark .footer-dark {
+  color: #ffffff;
+}
+
 .classImgFooter {
   width: 25px;
 }
@@ -519,6 +523,15 @@ nav li:hover > ul > li {
   background-position-x: right;
 }
 
+body.dark #imgSection1 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_calendar.jpg);
+  background-size: 15%;
+  margin-right: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
 #imgSection2 {
   background-image: url(../images/imagen_secciones/social-media-web-design-min.png);
   background-size: 12%;
@@ -526,6 +539,16 @@ nav li:hover > ul > li {
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: right;
+}
+
+body.dark #imgSection2 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_like.jpg);
+  background-size: 25%;
+  margin-right: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-bottom: 4.5%;
 }
 
 /*SECTION 3 HTML 'NUESTROS PRODUCTOS' CON INDEX*/
@@ -538,6 +561,16 @@ nav li:hover > ul > li {
   background-position-x: right;
 }
 
+body.dark #imgSection3 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_spices.jpg);
+  background-size: 15%;
+  margin-right: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-bottom: 3.5%;
+}
+
 /*SECTION 5 AL 7 CORRESPONDE HTML 'HISTORIA DE A GUSTO TUYO'*/
 #imgSection5 {
   background-image: url(../images/imagen_secciones/imagen_historia-min.png);
@@ -547,6 +580,18 @@ nav li:hover > ul > li {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-x: center;
+  padding-bottom: 5%;
+}
+
+body.dark #imgSection5 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_historia_vibes.jpg);
+  background-size: 25%;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position: center;
+  padding-bottom: 5%;
 }
 
 #imgSection6 {
@@ -558,6 +603,17 @@ nav li:hover > ul > li {
   background-position-x: right;
 }
 
+body.dark #imgSection6 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_map.png);
+  background-size: 15%;
+  margin-right: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
 #imgSection7 {
   background-image: url(../images/imagen_secciones/imagen_video-min.png);
   background-size: 25%;
@@ -567,10 +623,29 @@ nav li:hover > ul > li {
   background-position-x: right;
 }
 
+body.dark #imgSection7 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_video.jpg);
+  background-size: 25%;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-bottom: 2%;
+}
+
 /*SECTION 8 CORRESPONDE HTML 'MEDIOS DE PAGO'*/
 #imgSection8 {
   background-image: url(../images/imagen_secciones/medios_de_pago-min.png);
   background-size: 15%;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+body.dark #imgSection8 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_pagos.jpg);
+  background-size: 20%;
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
@@ -588,12 +663,46 @@ nav li:hover > ul > li {
   background-position: center;
 }
 
+body.dark #imgSection9 {
+  background-image: url(../images/imagen_secciones/image_dark_mode_consultas.jpg);
+  background-size: 15%;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position: center;
+}
+
 /*FIN SECCIONES (SECTIONS) HTML*/
 /*FIN SECCION IDs*/
 /*COMIENZO DE LAS CLASES HTML*/
 .classCards {
   display: flex;
   justify-content: space-between;
+}
+
+body.dark .card-header {
+  color: #ffffff;
+}
+
+body.dark .border-info .card-text {
+  color: antiquewhite;
+}
+
+body.dark .paragraphClass {
+  color: orange;
+}
+
+body.dark .form-label {
+  color: #ffffff;
+}
+
+body.dark .form-text {
+  color: #ffffff;
+}
+
+body.dark .form-check-label {
+  color: #ffffff;
 }
 
 .classCardSpecials > img {
@@ -607,6 +716,10 @@ nav li:hover > ul > li {
   background-color: white !important;
   margin: 75px;
   padding: 75px;
+}
+
+body.dark .card {
+  background-color: #000 !important;
 }
 
 .card-text {
@@ -625,6 +738,14 @@ nav li:hover > ul > li {
   margin-bottom: 50px;
 }
 
+body.dark .card-title {
+  color: orange;
+}
+
+body.dark .text-muted {
+  color: orange !important;
+}
+
 .cardTransfBankInfo {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-size: 18px;
@@ -635,6 +756,11 @@ nav li:hover > ul > li {
   margin: 0 0 25px;
   overflow: hidden;
   margin-top: 15px;
+}
+
+body.dark .cardTransfBankInfo {
+  color: #ffffff;
+  border-color: orange;
 }
 
 .imgCarousel {
@@ -1053,6 +1179,7 @@ ul li {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
+  margin-top: 0.4rem;
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1085,6 +1212,10 @@ ul li {
   border: 2px solid #f58f09;
 }
 
+body.dark .classParagraphHistory__h4 {
+  color: #ffffff;
+}
+
 .imageCorp__img {
   display: flex;
   justify-self: center;
@@ -1111,6 +1242,10 @@ ul li {
   border: 2px solid #c78938;
 }
 
+body.dark .classReferenceGoogleMaps_style {
+  color: #ffffff;
+}
+
 .videoStyle__modified {
   display: flex;
   justify-content: center;
@@ -1132,6 +1267,10 @@ ul li {
 .card-body__textColor {
   color: #000000;
   margin: 1rem;
+}
+
+body.dark .card-body__textColor {
+  color: #ffffff;
 }
 
 /*ERROR 404 ESTILO*/
