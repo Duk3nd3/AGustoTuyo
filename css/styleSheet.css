@@ -52,7 +52,7 @@
 }
 
 /*
-LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS:
+BREAKPOINTS PRINCIPALES:
 
 1. 1440px
 2. 1024px
@@ -62,6 +62,20 @@ LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS
 6. 320px
 
 */
+/*MEDIA QUERY MIN-WIDTH 1581px*/
+@media screen and (min-width: 1581px) {
+  .googleMapsStype {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 22%;
+  }
+  #imgSection7 {
+    background-position-y: 70% !important;
+  }
+}
+
 /*MEDIA QUERY MAX-WIDTH 1580px*/
 @media screen and (max-width: 1580px) {
   nav ul li a {
@@ -89,7 +103,29 @@ LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS
     background-position-y: 250px !important;
   }
   .googleMapsStype {
-    margin-left: 200px;
+    margin-left: 0.5%;
+  }
+}
+
+/*MEDIA QUERY MIN-WIDTH 1440px AND MAX-WIDTH 1579*/
+@media screen and (min-width: 1440px) and (max-width: 1579px) {
+  .googleMapsStype {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 22%;
+  }
+}
+
+/*MEDIA QUERY MIN-WIDTH 1366px AND MAX-WIDTH 1439px*/
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+  .googleMapsStype {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    max-width: 100%;
+    margin-left: 22%;
   }
 }
 
@@ -356,7 +392,7 @@ LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS
   .classStyleReferences {
     width: 400px;
     max-width: 100%;
-    margin-left: 21%;
+    margin-left: 9%;
   }
   .breadcrumb {
     width: 400px;
@@ -368,11 +404,13 @@ LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS
     max-width: 100%;
     margin-top: 11%;
   }
-  /*VER TEMA SCROLL EN RESOLUCION 425 CON IMAGENES MEDIOS DE PAGO++++++++++++++++++++++++*/
-  .cashImages {
-    margin-right: 300px;
-    width: 200px;
+  .sizeCashImages {
+    width: 100px;
     max-width: 100%;
+    margin-right: 400px;
+  }
+  .classParagraphHistory {
+    margin-left: 3%;
   }
 }
 
@@ -414,8 +452,17 @@ LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS
   .videoStyle video {
     margin-left: 15%;
   }
-  .cashImages {
-    margin-right: 200px;
+  .sizeCashImages {
+    width: 100px;
+    max-width: 100%;
+    margin-right: 170px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .sizeCashImages .cashImages {
+    padding: 15px;
+    width: 200px;
   }
 }
 
@@ -1181,6 +1228,10 @@ body .goog-te-gadget-simple .goog-te-menu-value span {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.sizeCashImages {
+  flex-wrap: wrap;
 }
 
 .position {
