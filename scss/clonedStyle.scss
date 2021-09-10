@@ -775,6 +775,10 @@ body {
     margin-bottom: 50px;
 }
 
+.position {
+    color: #fff;
+}
+
 .termsCenter {
     justify-content: center;
 }
@@ -925,6 +929,11 @@ ul {
 .breadcrumb-item {
     margin-left: 3px;
     margin-top: 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 5% !important;
+    margin-top: 1%;
 }
 
 .classColorHome {

@@ -1,3 +1,15 @@
+/*
+LOS BREAKPOINTS SE TOMARON EN CUENTO SOBRE PRINCIPALMENTE LAS SIGUIENTES MEDIDAS:
+
+1. 1440px
+2. 1024px
+3. 768px
+4. 425px
+5. 375px
+6. 320px
+
+*/
+
 /*MEDIA QUERY MAX-WIDTH 1580px*/
 @media screen and (max-width: 1580px) {
     nav {
@@ -14,6 +26,24 @@
     }
     h2::before, h2::after {
         display: none;
+    }
+    #imgSection2 {
+        background-position-y: 220px !important;
+    }
+    #imgSection3 {
+        background-position-y: 200px !important;
+    }
+    #imgSection5 {
+        background-position-y: 700px !important;
+    }
+    #imgSection6 {
+        background-position-y: 300px !important;
+    }
+    #imgSection7 {
+        background-position-y: 250px !important;
+    }
+    .googleMapsStype {
+        margin-left: 200px;
     }
 }
 
@@ -137,7 +167,10 @@
     #imgSection3 {
         background-position-y: 200px !important;
     }
-    /*++++++++REVISAR FOOTER +++++++++*/
+    .row > .item {
+        width: 300px;
+        max-width: 100%;
+    }
 }
 
 /*MEDIA QUERY MAX-WIDTH 768px*/
@@ -169,6 +202,20 @@
     }
     .paragraphClass {
         margin-left: 3%;
+    }
+    .row > .item {
+        width: 400px;
+        max-width: 100%;
+    }
+    .paymentStyles {
+        margin-left: 175px;
+    }
+    .paymentStyles__center {
+        width: 200px;
+        max-width: 100%;
+    }
+    .position {
+        margin-right: 170px !important;
     }
 }
 
@@ -203,10 +250,14 @@
     .googleMapsStype {
         display: flex;
         justify-content: center;
+        width: 200px;
+        max-width: 100%;
+        margin-left: 22%;
     }
     .videoStyle video {
-        width: 400px;
+        width: 300px;
         max-width: 100%;
+        margin-left: 10%;
     }
     #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8, #imgSection9 {
         background-image: none !important;
@@ -251,7 +302,7 @@
     }
     .classFeaturedProducts {
         display: block !important;
-        padding-left: 10%;
+        padding-left: 15%;
         .transformProductsImg {
             margin-top: 5%;
             margin-bottom: 5%;
@@ -268,9 +319,22 @@
     .classStyleReferences {
         width: 400px;
         max-width: 100%;
+        margin-left: 21%;
     }
     .breadcrumb {
         width: 400px;
+        max-width: 100%;
+    }
+    .classMediaImage > img {
+        width: 50px;
+        height: 50px;
+        max-width: 100%;
+        margin-top: 11%;
+    }
+    /*VER TEMA SCROLL EN RESOLUCION 425 CON IMAGENES MEDIOS DE PAGO++++++++++++++++++++++++*/
+    .cashImages {
+        margin-right: 300px;
+        width: 200px;
         max-width: 100%;
     }
 }
@@ -279,6 +343,13 @@
 @media screen and (min-width: 425px) and (max-width: 479px) {
     .classFeaturedProducts {
         display: flex !important;
+        padding-right: 15%;
+    }
+    .classParagraphHistory {
+        margin-left: 5%;
+    }
+    .classReferenceGoogleMaps > .classReferenceGoogleMaps_style {
+        margin-left: 3%;
     }
 }
 
@@ -297,5 +368,16 @@
     .carousel.item > active {
         padding-top: 0%;
         margin-top: 0%;
+    }
+    .googleMapsStype {
+        width: 100px;
+        max-width: 100%;
+        margin-left: 35%;
+    }
+    .videoStyle video {
+        margin-left: 15%;
+    }
+    .cashImages {
+        margin-right: 200px;
     }
 }
