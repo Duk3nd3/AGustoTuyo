@@ -157,6 +157,7 @@ nav {
 
 .footer-dark {
     h3 {
+        color: tan;
         margin-top:0;
         margin-bottom:12px;
         font-size:20px;
@@ -838,11 +839,14 @@ h2::after {
 }
 
 h3 {
-    color: rgb(255, 208, 0);
+    color: steelblue;
     letter-spacing: 3px;
     font-size: 30px;
     margin: 15px;
     padding: 15px;
+    body.dark & {
+        color: orange;
+    }
 }
 
 h4 {
