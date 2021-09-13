@@ -1,8 +1,6 @@
-**Developer for 'A Gusto Tuyo' Company** 
+* Developer for **'A Gusto Tuyo'** Company 
 
-* This company produces handmade spices such as chimichurri, pickled eggplants, brines, etc. This project is in continuous development. :shipit:
-
-Link to the web project: https://duk3nd3.github.io/AGustoTuyo/
+> This company produces handmade spices such as chimichurri, pickled eggplants, brines, etc. This project is in continuous development. :shipit:
 
 **The web project includes also the dark mode as shown in the gif file**
 
@@ -28,7 +26,8 @@ Link to the web project: https://duk3nd3.github.io/AGustoTuyo/
 ![Responsive web design](https://user-images.githubusercontent.com/87254745/133006758-46dab97d-9ece-4662-ac48-6026af607064.gif)
 
 ```
-This site was built using [GitHub Pages](https://duk3nd3.github.io/AGustoTuyo/)
+
+Link to the web project: https://duk3nd3.github.io/AGustoTuyo/
 
 ```
 
