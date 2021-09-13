@@ -28,12 +28,12 @@ Web Developer for **'A Gusto Tuyo'** Company
 
 - **The website also has responsiveness for mobile devices on the most popular screens.**
 
-.1440px
-.1024px
-.768px
-.425px
-.375px
-.320px
+1. Laptop L 1440px
+2. Laptop 1024px
+3. Tablet 768px
+4. Mobile L 425px
+5. Mobile M 375px
+6. Mobile S 320px
 
 
 ![Responsive web design](https://user-images.githubusercontent.com/87254745/133006758-46dab97d-9ece-4662-ac48-6026af607064.gif)
