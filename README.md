@@ -14,19 +14,13 @@ Web Developer for **'A Gusto Tuyo'** Company
 ![Dark Mode](https://user-images.githubusercontent.com/87254745/133006521-44554307-e34c-4da4-b08e-1daf66e15fff.gif)
 
 
-> **Source**: https://youtu.be/2Nmi1sXu12U
-
-
 - **Another feature is the multi-language option, using the Google Translator API.**
 
 
 ![Multilanguage](https://user-images.githubusercontent.com/87254745/133006620-5017521d-0b0a-49ac-98a1-c1ad00804d85.gif)
 
 
-> **Source**: https://youtu.be/wrFm7y7fTjM
-
-
-- **The website also has responsiveness for mobile devices on the most popular screens.**
+- **The website also has responsiveness for mobile devices on the most popular screens.** :g-emoji:
 
 1. Laptop L 1440px
 2. Laptop 1024px
