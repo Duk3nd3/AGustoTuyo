@@ -1,6 +1,6 @@
 # Web Developer for **'A Gusto Tuyo'** Company
 
-<h1 align="center">Hi 👋, I'm Juan Manuel</h1>
+<h2 align="center">Hi 👋, I'm Juan Manuel</h2>
 <h3 align="center">A passionate frontend developer from Argentine</h3>
 
 - 🔭 I’m currently working on [A Gusto Tuyo Project](https://duk3nd3.github.io/AGustoTuyo/)
@@ -38,12 +38,12 @@
 
 ## The website also has responsiveness for **mobile devices** on the most popular screens. 📋
 
-- 📌 Laptop L 1440px
-- 📌 Laptop 1024px
-- 📌 Tablet 768px
-- 📌 Mobile L 425px
-- 📌 Mobile M 375px
-- 📌 Mobile S 320px
+- Laptop L 1440px 📌
+- Laptop 1024px 📌
+- Tablet 768px 📌
+- Mobile L 425px 📌
+- Mobile M 375px 📌
+- Mobile S 320px 📌
 
 
 ![Responsive web design](https://user-images.githubusercontent.com/87254745/133006758-46dab97d-9ece-4662-ac48-6026af607064.gif)
