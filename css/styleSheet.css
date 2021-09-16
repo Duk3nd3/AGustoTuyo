@@ -72,7 +72,8 @@ BREAKPOINTS PRINCIPALES:
     margin-left: 22%;
   }
   #imgSection7 {
-    background-position-y: 70% !important;
+    background-position-y: 50% !important;
+    background-position-x: 90% !important;
   }
 }
 
@@ -292,6 +293,60 @@ BREAKPOINTS PRINCIPALES:
   }
 }
 
+/*MEDIA QUERY MIN-WIDTH 769px and MAX-WIDTH 879px*/
+@media screen and (min-width: 769px) and (max-width: 879px) {
+  .sizeCashImages {
+    width: 100px;
+    max-width: 100%;
+    margin-right: 170px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .sizeCashImages .cashImages {
+    padding: 15px;
+    width: 200px;
+  }
+}
+
+/*MEDIA QUERY MIN-WIDTH 481px and MAX-WIDTH 671px*/
+@media screen and (min-width: 481px) and (max-width: 671px) {
+  h1 {
+    font-size: 20px !important;
+  }
+  #logoCompany {
+    max-width: 100%;
+  }
+  #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8, #imgSection9 {
+    background-image: none !important;
+  }
+  .classCalendar {
+    width: 500px;
+    max-width: 100%;
+  }
+  .googleMapsStype {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 5% !important;
+  }
+  .paymentStyles__center {
+    display: none;
+  }
+  .sizeCashImages {
+    width: 100px;
+    max-width: 100%;
+    margin-right: 170px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .sizeCashImages .cashImages {
+    padding: 15px;
+    width: 200px;
+  }
+}
+
 /*MEDIA QUERY MAX-WIDTH 480px*/
 @media screen and (max-width: 480px) {
   h3 {
@@ -374,7 +429,6 @@ BREAKPOINTS PRINCIPALES:
     margin-right: 20%;
   }
   .classFeaturedProducts {
-    display: block !important;
     padding-left: 15%;
   }
   .classFeaturedProducts .transformProductsImg {
@@ -411,6 +465,9 @@ BREAKPOINTS PRINCIPALES:
   }
   .classParagraphHistory {
     margin-left: 3%;
+  }
+  .cardTransfBankInfo {
+    margin-left: 5% !important;
   }
 }
 
@@ -708,7 +765,7 @@ body.dark .footer-dark {
 }
 
 body.dark #imgSection1 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_calendar.jpg);
+  background-image: url(../images/imagen_secciones/image_dark_mode_calendar.png);
   background-size: 15%;
   margin-right: 25px;
   background-position: center;
@@ -726,7 +783,7 @@ body.dark #imgSection1 {
 }
 
 body.dark #imgSection2 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_like.jpg);
+  background-image: url(../images/imagen_secciones/image_dark_mode_like.png);
   background-size: 25%;
   margin-right: 25px;
   background-position: center;
@@ -746,7 +803,7 @@ body.dark #imgSection2 {
 }
 
 body.dark #imgSection3 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_spices.jpg);
+  background-image: url(../images/imagen_secciones/image_dark_mode_spices.png);
   background-size: 15%;
   margin-right: 30px;
   background-position: center;
@@ -768,7 +825,7 @@ body.dark #imgSection3 {
 }
 
 body.dark #imgSection5 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_historia_vibes.jpg);
+  background-image: url(../images/imagen_secciones/image_dark_mode_historia_vibes.png);
   background-size: 25%;
   margin-right: 20px;
   background-position: center;
@@ -788,8 +845,8 @@ body.dark #imgSection5 {
 }
 
 body.dark #imgSection6 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_map.png);
-  background-size: 15%;
+  background-image: url(../images/imagen_secciones/image_dark_mode_mapa.png);
+  background-size: 25%;
   margin-right: 50px;
   background-position: center;
   background-repeat: no-repeat;
@@ -808,8 +865,8 @@ body.dark #imgSection6 {
 }
 
 body.dark #imgSection7 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_video.jpg);
-  background-size: 25%;
+  background-image: url(../images/imagen_secciones/image_dark_mode_video-2.png);
+  background-size: 15%;
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
@@ -828,8 +885,8 @@ body.dark #imgSection7 {
 }
 
 body.dark #imgSection8 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_pagos.jpg);
-  background-size: 20%;
+  background-image: url(../images/imagen_secciones/image_dark_mode_pagos.png);
+  background-size: 15%;
   margin-right: 15px;
   background-position: center;
   background-repeat: no-repeat;
@@ -848,7 +905,7 @@ body.dark #imgSection8 {
 }
 
 body.dark #imgSection9 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_consultas.jpg);
+  background-image: url(../images/imagen_secciones/image_dark_mode_consultas.png);
   background-size: 15%;
   margin-right: 15px;
   background-position: center;

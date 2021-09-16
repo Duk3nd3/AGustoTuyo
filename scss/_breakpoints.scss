@@ -20,7 +20,8 @@ BREAKPOINTS PRINCIPALES:
         margin-left: 22%;
     }
     #imgSection7 {
-        background-position-y: 70% !important;
+        background-position-y: 50% !important;
+        background-position-x: 90% !important;
     }
 }
 
@@ -255,6 +256,60 @@ BREAKPOINTS PRINCIPALES:
     }
 }
 
+/*MEDIA QUERY MIN-WIDTH 769px and MAX-WIDTH 879px*/
+@media screen and (min-width: 769px) and (max-width: 879px) {
+    .sizeCashImages {
+        width: 100px;
+        max-width: 100%;
+        margin-right: 170px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .cashImages {
+            padding: 15px;
+            width: 200px;
+        }
+    }
+}
+
+/*MEDIA QUERY MIN-WIDTH 481px and MAX-WIDTH 671px*/
+@media screen and (min-width: 481px) and (max-width: 671px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    #logoCompany {
+        max-width: 100%;
+    }
+    #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8, #imgSection9 {
+        background-image: none !important;
+    }
+    .classCalendar {
+        width: 500px;
+        max-width: 100%;
+    }
+    .googleMapsStype {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        padding-left: 5% !important;
+    }
+    .paymentStyles__center {
+        display: none;
+    }
+    .sizeCashImages {
+        width: 100px;
+        max-width: 100%;
+        margin-right: 170px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .cashImages {
+            padding: 15px;
+            width: 200px;
+        }
+    }
+}
+
 /*MEDIA QUERY MAX-WIDTH 480px*/
 @media screen and (max-width: 480px) {
     h3 {
@@ -298,7 +353,7 @@ BREAKPOINTS PRINCIPALES:
     #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8, #imgSection9 {
         background-image: none !important;
     }
-    #logoCompany { 
+    #logoCompany {
         max-width: 100%;
     }
     #flexLogoCompany {
@@ -337,7 +392,6 @@ BREAKPOINTS PRINCIPALES:
         margin-right: 20%;
     }
     .classFeaturedProducts {
-        display: block !important;
         padding-left: 15%;
         .transformProductsImg {
             margin-top: 5%;
@@ -374,6 +428,9 @@ BREAKPOINTS PRINCIPALES:
     }
     .classParagraphHistory {
         margin-left: 3%;
+    }
+    .cardTransfBankInfo {
+        margin-left: 5% !important;
     }
 }
 
