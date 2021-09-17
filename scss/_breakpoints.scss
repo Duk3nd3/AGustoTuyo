@@ -210,6 +210,32 @@ BREAKPOINTS PRINCIPALES:
     }
 }
 
+/*MEDIA QUERY MIN-WIDTH 1025px*/
+@media screen and (min-width: 1025px) {
+    .row > .item {
+        width: 300px;
+        max-width: 100%;
+    }
+}
+
+/*MEDIA QUERY 'DARK MODE- MIN-WIDTH 672px AND MAX-WIDTH 1023px*/
+@media screen and (min-width:672px) and (max-width:1023px) {
+    body.dark {
+        #imgSection1, #imgSection2, #imgSection3, #imgSection5, #imgSection6, #imgSection7, #imgSection8 {
+            background-image: none !important;
+        }
+    }
+    body.dark {
+        .googleMapsStype {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            padding-left: 1% !important;
+        }
+    }
+}
+
+
 /*MEDIA QUERY MAX-WIDTH 768px*/
 @media screen and (max-width: 768px) {
     #imgSection2 {

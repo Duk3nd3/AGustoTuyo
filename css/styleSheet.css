@@ -247,6 +247,27 @@ BREAKPOINTS PRINCIPALES:
   }
 }
 
+/*MEDIA QUERY MIN-WIDTH 1025px*/
+@media screen and (min-width: 1025px) {
+  .row > .item {
+    width: 300px;
+    max-width: 100%;
+  }
+}
+
+/*MEDIA QUERY 'DARK MODE- MIN-WIDTH 672px AND MAX-WIDTH 1023px*/
+@media screen and (min-width: 672px) and (max-width: 1023px) {
+  body.dark #imgSection1, body.dark #imgSection2, body.dark #imgSection3, body.dark #imgSection5, body.dark #imgSection6, body.dark #imgSection7, body.dark #imgSection8 {
+    background-image: none !important;
+  }
+  body.dark .googleMapsStype {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 1% !important;
+  }
+}
+
 /*MEDIA QUERY MAX-WIDTH 768px*/
 @media screen and (max-width: 768px) {
   #imgSection2 {
@@ -765,7 +786,7 @@ body.dark .footer-dark {
 }
 
 body.dark #imgSection1 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_calendar.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_calendar-min.png);
   background-size: 15%;
   margin-right: 25px;
   background-position: center;
@@ -783,13 +804,13 @@ body.dark #imgSection1 {
 }
 
 body.dark #imgSection2 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_like.png);
-  background-size: 25%;
+  background-image: url(../images/imagen_secciones/image_dark_mode_like-min.png);
+  background-size: 15%;
   margin-right: 25px;
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: right;
-  padding-bottom: 4.5%;
+  padding-bottom: 1%;
 }
 
 /*SECTION 3 HTML 'NUESTROS PRODUCTOS' CON INDEX*/
@@ -803,7 +824,7 @@ body.dark #imgSection2 {
 }
 
 body.dark #imgSection3 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_spices.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_spices-min.png);
   background-size: 15%;
   margin-right: 30px;
   background-position: center;
@@ -821,18 +842,16 @@ body.dark #imgSection3 {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-x: center;
-  padding-bottom: 5%;
 }
 
 body.dark #imgSection5 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_historia_vibes.png);
-  background-size: 25%;
+  background-image: url(../images/imagen_secciones/image_dark_mode_historia_vibes-min.png);
+  background-size: 20%;
   margin-right: 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: right;
   background-position: center;
-  padding-bottom: 5%;
 }
 
 #imgSection6 {
@@ -845,7 +864,7 @@ body.dark #imgSection5 {
 }
 
 body.dark #imgSection6 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_mapa.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_mapa-min.png);
   background-size: 25%;
   margin-right: 50px;
   background-position: center;
@@ -865,7 +884,7 @@ body.dark #imgSection6 {
 }
 
 body.dark #imgSection7 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_video-2.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_video-2-min.png);
   background-size: 15%;
   margin-right: 15px;
   background-position: center;
@@ -885,7 +904,7 @@ body.dark #imgSection7 {
 }
 
 body.dark #imgSection8 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_pagos.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_pagos-min.png);
   background-size: 15%;
   margin-right: 15px;
   background-position: center;
@@ -905,7 +924,7 @@ body.dark #imgSection8 {
 }
 
 body.dark #imgSection9 {
-  background-image: url(../images/imagen_secciones/image_dark_mode_consultas.png);
+  background-image: url(../images/imagen_secciones/image_dark_mode_consultas-min.png);
   background-size: 15%;
   margin-right: 15px;
   background-position: center;
